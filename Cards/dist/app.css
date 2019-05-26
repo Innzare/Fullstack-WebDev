@@ -1,5 +1,8 @@
 
 
+.room__search__wrapper {
+  width: 380px;
+  border: 1px solid black; }
 
 .header h1 {
   color: red; }

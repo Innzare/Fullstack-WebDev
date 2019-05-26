@@ -1,13 +1,16 @@
 .room__search__wrapper
-    h1(class='room__search__h1') Найдем номера под ваши пожелания
-    .room__search__input_inOut 
-        span прибытие
-        input(type="text")
-        span выезд
-        input(type="text")
+    .room__search__text
+        h1(class='room__search__h1') Найдем номера под ваши пожелания
+    .room__search__input_inOut
+        .room__search__input_in
+            span прибытие
+            input(type="text")
+        .room__search__input_out
+            span выезд
+            input(type="text")
     .room__search__input_vis
         span гости
         input(type="text")
     .room__search__input_button
-        input(type="button")
+        input(type="button" value='подобрать номер') 
         
