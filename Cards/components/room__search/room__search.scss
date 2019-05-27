@@ -9,12 +9,25 @@
 .room__search__text {
     width: 320px;
     margin: 0 auto;
-    font-family: Quicksand;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+}
+
+span {
+    margin-bottom: 5px;
 }
 
 .room__search__input_inOut {
     display: flex;
     margin: 0 auto;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+text-transform: uppercase;
 }
 
 .room__search__input_in{
@@ -45,6 +58,14 @@
     flex-direction: column;
     width: 320px;
     margin: 0 auto;
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    text-transform: uppercase;
 }
 
 .room__search__input_button {
@@ -54,12 +75,25 @@
 .room__search__input_button input {
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 22px;
+    border: 0ch;
     width: 320px;
     height: 44px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 12px;
     line-height: 15px;
+    /* identical to box height */
     color: white;
+    text-align: center;
+    text-transform: uppercase;
 }
+
+@font-face {
+    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+    font-family: "RalewayRegular"; 
+    // адрес шрифта и тип 
+    src: url("../../src/fonts/Montserrat-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
