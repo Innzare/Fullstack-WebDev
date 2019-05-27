@@ -50,6 +50,31 @@ module.exports = {
                         }
                     }
                 ]
+            }, {
+                test: /images[\\\/].+\.(gif|png|jpe?g|svg)$/i,
+                use: [{
+                  loader: 'file-loader',
+                  options: {
+                    name: 'images/[name][hash].[ext]'
+                  }
+                }, {
+                  loader: 'image-webpack-loader',
+                  options: {
+                    mozjpeg: {
+                      progressive: true,
+                      quality: 70
+                    }
+                  }
+                },
+                ],
+              }, {
+                test: /fonts[\\\/].+\.(eot|svg|ttf|woff|woff2)$/,
+                use: {
+                  loader: 'file-loader',
+                  options: {
+                    name: 'fonts/[name][hash].[ext]'
+                  }
+                },
             }
         ]
     },
