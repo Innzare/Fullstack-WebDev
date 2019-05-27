@@ -44,6 +44,12 @@ text-transform: uppercase;
     box-sizing: border-box;
     border-radius: 4px;
     height: 44px;
+    padding-left: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .room__search__input_out {
@@ -89,11 +95,10 @@ text-transform: uppercase;
     text-transform: uppercase;
 }
 
-@font-face {
-    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
-    font-family: "RalewayRegular"; 
-    // адрес шрифта и тип 
-    src: url("../../src/fonts/Montserrat-Bold.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
-    } 
+.room__search__input_button input:hover {
+    cursor: pointer;
+}
+
+.room__search__input_button svg{
+    fill: #111;
+}
