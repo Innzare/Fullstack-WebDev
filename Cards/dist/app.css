@@ -24,7 +24,6 @@ span {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
   text-transform: uppercase; }
 
 .room__search__input_in {
@@ -35,7 +34,6 @@ span {
 
 .room__search__input_in input, .room__search__input_out input, .room__search__input_vis input {
   background: #FFFFFF;
-  /* Dark 25% */
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
@@ -64,13 +62,14 @@ span {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
   text-transform: uppercase; }
 
 .room__search__input_button {
-  margin: 30px auto; }
+  margin: 30px auto;
+  display: flex;
+  flex-direction: row; }
 
-.room__search__input_button input {
+.room__search__input_button button {
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-radius: 22px;
   border: 0ch;
@@ -81,16 +80,12 @@ span {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
   color: white;
   text-align: center;
   text-transform: uppercase; }
 
-.room__search__input_button input:hover {
+.room__search__input_button button:hover {
   cursor: pointer; }
-
-.room__search__input_button svg {
-  fill: #111; }
 
 .header h1 {
   color: red; }

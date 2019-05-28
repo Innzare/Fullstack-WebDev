@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title><link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="datepicker.min.css"><script src="datepicker.min.js"></script>
   <link href="/dist/app.css" rel="stylesheet"></head>
   <body>
 <div class="room__search__wrapper">
@@ -14,17 +15,17 @@
   </div>
   <div class="room__search__input_inOut">
     <div class="room__search__input_in"><span>прибытие</span>
-      <input type="text" placeholder="ДД.ММ.ГГГГ">
+      <input class="datepicker-here" type="text" placeholder="ДД.ММ.ГГГГ">
     </div>
     <div class="room__search__input_out"><span>выезд</span>
-      <input type="text" placeholder="ДД.ММ.ГГГГ">
+      <input class="datepicker-here" type="text" placeholder="ДД.ММ.ГГГГ">
     </div>
   </div>
   <div class="room__search__input_vis"><span>гости</span>
     <input type="text" placeholder="Сколько гостей">
   </div>
   <div class="room__search__input_button">
-    <input type="button" value="подобрать номер"><a href="#"></a><img src="../../src/icons/outline-arrow_forward-24px.svg" alt="">
+    <button type="button" value="подобрать номер">подобрать номер</button>
   </div>
 </div>
 <div class="enter__wrapper">
