@@ -1,3 +1,3 @@
 # Fullstack-WebDev
 
-https://innzare.github.io/Fullstack-WebDev/
+https://innzare.github.io/Fullstack-WebDev/dist
