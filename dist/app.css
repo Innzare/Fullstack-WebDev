@@ -99,6 +99,8 @@ span {
   width: 320px;
   height: 67px;
   display: flex;
+  margin-left: 140px;
+  margin-top: 120px;
   flex-direction: column;
   /* webkit */
   /* Firefox 19+ */
@@ -135,4 +137,11 @@ span {
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase; }
+
+.ico_svg {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 30px;
+  top: 30px; }
 

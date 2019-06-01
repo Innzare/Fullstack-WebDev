@@ -2,6 +2,8 @@
     width: 320px;
     height: 67px;
     display: flex;
+    margin-left: 140px;
+    margin-top: 120px;
     flex-direction: column;
     :focus::-webkit-input-placeholder {opacity:0;}/* webkit */
     :focus::-moz-placeholder          {opacity:0;}/* Firefox 19+ */
@@ -35,4 +37,12 @@
         line-height: 15px;
         text-transform: uppercase;
     }
+}
+
+.ico_svg {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 30px;
+    top: 30px;
 }
