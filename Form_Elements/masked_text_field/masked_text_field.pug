@@ -1,0 +1,6 @@
+mixin masked_text_field(title)
+    .masked_text_field
+        .masked_text_field__span
+            span= title
+        .masked_text_field__input 
+            input(type="text" placeholder="ДД.ММ.ГГГГ" class='datepicker-here')
