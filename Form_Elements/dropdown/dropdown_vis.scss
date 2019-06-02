@@ -59,7 +59,8 @@
 
 
 .dropdown_content {
-    display: none;
+    // display: none;
+    display: flex;
     background-color: #fff;
     z-index: 1;
     border: 1px solid rgba(31, 32, 65, 0.25);
@@ -102,6 +103,7 @@
             padding-top: 8px;
             font-size: 14px;
             font-weight: bold;
+            color: black;
         }
     }
     .dropdown_content__human_amount_plus {
