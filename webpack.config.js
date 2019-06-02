@@ -10,7 +10,7 @@ module.exports = {
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, './dist'),
-        publicPath: '/dist'
+        publicPath: ''
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -81,7 +81,14 @@ module.exports = {
                     name: 'fonts/[name][hash].[ext]'
                   }
                 },
-            }
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: [{
+                  loader: 'babel-loader'
+                }]
+              },
         ]
     },
     devServer: {
