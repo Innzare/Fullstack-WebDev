@@ -1,8 +1,12 @@
 var elem = document.getElementById('test');
 var elems = document.getElementById('test1');
+elem.onclick = elems.style.display = 'none';;
 function func() {
-    elems.style.display == 'none' ? elems.style.display = 'flex' : elems.style.display = 'none';
-
+    if (elems.style.display == 'none') {
+      elems.style.display = 'flex';
+    } else {
+      elems.style.display = 'none'
+    }
   }
   elem.onclick = func;
 
