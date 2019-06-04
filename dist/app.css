@@ -167,7 +167,13 @@ span {
     box-sizing: border-box;
     border-radius: 4px;
     padding-left: 15px;
-    margin-top: 5px; }
+    margin-top: 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: black; }
   .text_field input::placeholder {
     font-size: 14px;
     font-family: Montserrat; }
@@ -310,7 +316,13 @@ span {
     box-sizing: border-box;
     border-radius: 4px;
     padding-left: 15px;
-    margin-top: 5px; }
+    margin-top: 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: black; }
   .text_field input::placeholder {
     font-size: 14px;
     font-family: Montserrat; }
@@ -363,7 +375,13 @@ span {
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 4px;
-    padding-left: 15px; }
+    padding-left: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: black; }
   .dropdown_vis input::placeholder {
     font-size: 14px;
     font-family: Montserrat; }
@@ -493,7 +511,13 @@ span {
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 4px;
-    padding-left: 15px; }
+    padding-left: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: black; }
   .dropdown_bedroom input::placeholder {
     font-size: 14px;
     font-family: Montserrat; }
@@ -759,7 +783,13 @@ span {
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 4px;
-    padding-left: 15px; }
+    padding-left: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: black; }
   .subscription_text_field input::placeholder {
     font-size: 14px;
     font-family: Montserrat;
