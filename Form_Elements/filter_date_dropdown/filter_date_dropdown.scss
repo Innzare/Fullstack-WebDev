@@ -1,9 +1,9 @@
-.masked_text_field {
-    width: 320px;
+.filter_date_dropdown {
+    width: 266px;
     height: 67px;
     display: flex;
     margin-left: 140px;
-    margin-top: 200px;
+    margin-top: 50px;
     flex-direction: column;
     :focus::-webkit-input-placeholder {opacity:0;}/* webkit */
     :focus::-moz-placeholder          {opacity:0;}/* Firefox 19+ */
@@ -12,7 +12,7 @@
     position: relative;
     
     input {
-        width: 320px;
+        width: 266px;
         height: 44px;
         background: #FFFFFF;
         border: 1px solid rgba(31, 32, 65, 0.25);
@@ -24,9 +24,9 @@
         font-weight: normal;
         font-size: 14px;
         line-height: 24px;
-        
+        color: rgba(31, 32, 65, 0.75);
     }
-    input::placeholder { font-size: 14px; font-family: Montserrat; color: rgba(31, 32, 65, 0.25);}
+    input::placeholder { font-size: 14px; font-family: Montserrat;}
     
     input:hover {
         background: #FFFFFF;
@@ -37,7 +37,7 @@
         border: 1px solid rgba(31, 32, 65, 0.5);
         outline: none;
     }
-    .masked_text_field__span {
+    .filter_date_dropdown__span {
         margin-bottom: 5px;
     }
     span {
@@ -47,5 +47,18 @@
         font-size: 12px;
         line-height: 15px;
         text-transform: uppercase;
+    }
+}
+
+.filter_date_dropdown__input_svg {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    line-height: 2.5;
+    svg {
+        
+        padding-left: 15px;
     }
 }

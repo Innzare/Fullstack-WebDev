@@ -1,9 +1,15 @@
-.masked_text_field {
+.date_dropdown {
+    display: flex;
     width: 320px;
+    margin-left: 140px;
+}
+
+.date_dropdown_field {
+    width: 150px;
     height: 67px;
     display: flex;
-    margin-left: 140px;
-    margin-top: 200px;
+    margin-right: 20px;
+    margin-top: 50px;
     flex-direction: column;
     :focus::-webkit-input-placeholder {opacity:0;}/* webkit */
     :focus::-moz-placeholder          {opacity:0;}/* Firefox 19+ */
@@ -12,7 +18,7 @@
     position: relative;
     
     input {
-        width: 320px;
+        width: 150px;
         height: 44px;
         background: #FFFFFF;
         border: 1px solid rgba(31, 32, 65, 0.25);
@@ -37,7 +43,7 @@
         border: 1px solid rgba(31, 32, 65, 0.5);
         outline: none;
     }
-    .masked_text_field__span {
+    .date_dropdown_field__span {
         margin-bottom: 5px;
     }
     span {
@@ -47,5 +53,16 @@
         font-size: 12px;
         line-height: 15px;
         text-transform: uppercase;
+    }
+}
+.date_dropdown__input_svg {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    cursor: pointer;
+    left: 110px;
+    line-height: 2.5;
+    svg {
+        padding-left: 15px;
     }
 }

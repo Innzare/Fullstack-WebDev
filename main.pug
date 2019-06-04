@@ -31,12 +31,27 @@ html(lang="en")
             <path d="M24 48C10.7647 48 0 37.2353 0 24C0 10.7647 10.7647 0 24 0C37.2353 0 48 10.7647 48 24C48 37.2353 37.2353 48 24 48ZM24 2.82353C12.3176 2.82353 2.82353 12.3176 2.82353 24C2.82353 35.6824 12.3176 45.1765 24 45.1765C35.6824 45.1765 45.1765 35.6824 45.1765 24C45.1765 12.3176 35.6824 2.82353 24 2.82353Z" fill="#1F2041" fill-opacity="0.25"/>
             </svg>
         
-        include Form_Elements/dropdown/dropdown_vis
-        +dropdown_vis('dropdown')
+
+        .dropdown_blocks
+            include Form_Elements/dropdown/dropdown_vis
+            +dropdown_vis('dropdown')
+
+            include Form_Elements/dropdown_bedroom/dropdown_bedroom
+            +dropdown_bedroom('dropdown')
+
 
         include Form_Elements/masked_text_field/masked_text_field
         +masked_text_field('masked text field')
 
-        
+        include Form_Elements/date_dropdown/date_dropdown
+        +date_dropdown('date dropdown')
+
+        include Form_Elements/filter_date_dropdown/filter_date_dropdown
+        +filter_date_dropdown('filter date dropdown')
+
+        include Form_Elements/subscription_text_field/subscription_text_field
+        +subscription_text_field('subscription text field')
+
+
         
         script(src="app.js")

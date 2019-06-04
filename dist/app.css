@@ -26,7 +26,12 @@
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 4px;
-    padding-left: 15px; }
+    padding-left: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px; }
   .masked_text_field input::placeholder {
     font-size: 14px;
     font-family: Montserrat;
@@ -391,6 +396,7 @@ span {
 
 .dropdown_content {
   display: none;
+  height: 160px;
   background-color: #fff;
   z-index: 1;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -405,9 +411,18 @@ span {
     padding-top: 10px; }
     .dropdown_content .dropdown_content__human span {
       margin-bottom: 22px; }
+    .dropdown_content .dropdown_content__human .clear {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: rgba(31, 32, 65, 0.5);
+      margin-top: 9px;
+      cursor: pointer; }
   .dropdown_content .dropdown_content__human_amount {
     display: flex;
-    padding-right: 15px;
     padding-top: 8px;
     font-family: Montserrat;
     flex-direction: column;
@@ -423,13 +438,24 @@ span {
       padding-top: 4px;
       cursor: pointer; }
     .dropdown_content .dropdown_content__human_amount .dropdown_content__human_amount_1 {
-      display: flex; }
+      display: flex;
+      padding-left: 8px; }
     .dropdown_content .dropdown_content__human_amount span {
       margin: 0 12px;
       padding-top: 8px;
       font-size: 14px;
       font-weight: bold;
       color: black; }
+    .dropdown_content .dropdown_content__human_amount span.confirm {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      color: #BC9CFF;
+      text-transform: uppercase;
+      margin-top: 9px;
+      cursor: pointer; }
   .dropdown_content .dropdown_content__human_amount_plus {
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
@@ -439,4 +465,330 @@ span {
     margin-bottom: 5px;
     padding-top: 4px;
     cursor: pointer; }
+
+.dropdown_bedroom {
+  width: 320px;
+  height: 67px;
+  display: flex;
+  margin-left: 140px;
+  margin-top: 50px;
+  flex-direction: column;
+  /* webkit */
+  /* Firefox 19+ */
+  /* Firefox 18- */
+  /* IE */
+  position: relative; }
+  .dropdown_bedroom :focus::-webkit-input-placeholder {
+    opacity: 0; }
+  .dropdown_bedroom :focus::-moz-placeholder {
+    opacity: 0; }
+  .dropdown_bedroom :focus:-moz-placeholder {
+    opacity: 0; }
+  .dropdown_bedroom :focus:-ms-input-placeholder {
+    opacity: 0; }
+  .dropdown_bedroom input {
+    width: 320px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 15px; }
+  .dropdown_bedroom input::placeholder {
+    font-size: 14px;
+    font-family: Montserrat; }
+  .dropdown_bedroom input:hover {
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    box-sizing: border-box; }
+  .dropdown_bedroom input:focus {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    outline: none; }
+  .dropdown_bedroom .dropdown_bedroom__span {
+    margin-bottom: 5px; }
+  .dropdown_bedroom span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase; }
+
+.dropdown_bedroom__input_svg {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  line-height: 2.5; }
+  .dropdown_bedroom__input_svg svg {
+    padding-left: 15px; }
+
+.dropdown_bedroom_content {
+  display: none;
+  height: 160px;
+  background-color: #fff;
+  z-index: 1;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  justify-content: space-between;
+  margin-top: -2px; }
+  .dropdown_bedroom_content .dropdown_content__human {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 10px; }
+    .dropdown_bedroom_content .dropdown_content__human span {
+      margin-bottom: 22px; }
+    .dropdown_bedroom_content .dropdown_content__human .clear {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: rgba(31, 32, 65, 0.5);
+      margin-top: 9px;
+      cursor: pointer; }
+  .dropdown_bedroom_content .dropdown_content__human_amount {
+    display: flex;
+    padding-top: 8px;
+    font-family: Montserrat;
+    flex-direction: column;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5); }
+    .dropdown_bedroom_content .dropdown_content__human_amount .dropdown_content__human_amount_minus {
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      box-sizing: border-box;
+      border-radius: 22px;
+      width: 30px;
+      height: 30px;
+      margin-bottom: 5px;
+      padding-top: 4px;
+      cursor: pointer; }
+    .dropdown_bedroom_content .dropdown_content__human_amount .dropdown_content__human_amount_1 {
+      display: flex;
+      padding-left: 8px; }
+    .dropdown_bedroom_content .dropdown_content__human_amount span {
+      margin: 0 12px;
+      padding-top: 8px;
+      font-size: 14px;
+      font-weight: bold;
+      color: black; }
+    .dropdown_bedroom_content .dropdown_content__human_amount span.confirm {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      color: #BC9CFF;
+      text-transform: uppercase;
+      margin-top: 9px;
+      cursor: pointer; }
+  .dropdown_bedroom_content .dropdown_content__human_amount_plus {
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 22px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+    padding-top: 4px;
+    cursor: pointer; }
+
+.dropdown_blocks {
+  display: flex; }
+
+.date_dropdown {
+  display: flex;
+  width: 320px;
+  margin-left: 140px; }
+
+.date_dropdown_field {
+  width: 150px;
+  height: 67px;
+  display: flex;
+  margin-right: 20px;
+  margin-top: 50px;
+  flex-direction: column;
+  /* webkit */
+  /* Firefox 19+ */
+  /* Firefox 18- */
+  /* IE */
+  position: relative; }
+  .date_dropdown_field :focus::-webkit-input-placeholder {
+    opacity: 0; }
+  .date_dropdown_field :focus::-moz-placeholder {
+    opacity: 0; }
+  .date_dropdown_field :focus:-moz-placeholder {
+    opacity: 0; }
+  .date_dropdown_field :focus:-ms-input-placeholder {
+    opacity: 0; }
+  .date_dropdown_field input {
+    width: 150px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px; }
+  .date_dropdown_field input::placeholder {
+    font-size: 14px;
+    font-family: Montserrat;
+    color: rgba(31, 32, 65, 0.25); }
+  .date_dropdown_field input:hover {
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    box-sizing: border-box; }
+  .date_dropdown_field input:focus {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    outline: none; }
+  .date_dropdown_field .date_dropdown_field__span {
+    margin-bottom: 5px; }
+  .date_dropdown_field span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase; }
+
+.date_dropdown__input_svg {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  cursor: pointer;
+  left: 110px;
+  line-height: 2.5; }
+  .date_dropdown__input_svg svg {
+    padding-left: 15px; }
+
+.filter_date_dropdown {
+  width: 266px;
+  height: 67px;
+  display: flex;
+  margin-left: 140px;
+  margin-top: 50px;
+  flex-direction: column;
+  /* webkit */
+  /* Firefox 19+ */
+  /* Firefox 18- */
+  /* IE */
+  position: relative; }
+  .filter_date_dropdown :focus::-webkit-input-placeholder {
+    opacity: 0; }
+  .filter_date_dropdown :focus::-moz-placeholder {
+    opacity: 0; }
+  .filter_date_dropdown :focus:-moz-placeholder {
+    opacity: 0; }
+  .filter_date_dropdown :focus:-ms-input-placeholder {
+    opacity: 0; }
+  .filter_date_dropdown input {
+    width: 266px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75); }
+  .filter_date_dropdown input::placeholder {
+    font-size: 14px;
+    font-family: Montserrat; }
+  .filter_date_dropdown input:hover {
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    box-sizing: border-box; }
+  .filter_date_dropdown input:focus {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    outline: none; }
+  .filter_date_dropdown .filter_date_dropdown__span {
+    margin-bottom: 5px; }
+  .filter_date_dropdown span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase; }
+
+.filter_date_dropdown__input_svg {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  line-height: 2.5; }
+  .filter_date_dropdown__input_svg svg {
+    padding-left: 15px; }
+
+.subscription_text_field {
+  width: 320px;
+  height: 67px;
+  display: flex;
+  margin-left: 140px;
+  margin-top: 50px;
+  flex-direction: column;
+  /* webkit */
+  /* Firefox 19+ */
+  /* Firefox 18- */
+  /* IE */
+  position: relative; }
+  .subscription_text_field :focus::-webkit-input-placeholder {
+    opacity: 0; }
+  .subscription_text_field :focus::-moz-placeholder {
+    opacity: 0; }
+  .subscription_text_field :focus:-moz-placeholder {
+    opacity: 0; }
+  .subscription_text_field :focus:-ms-input-placeholder {
+    opacity: 0; }
+  .subscription_text_field input {
+    width: 320px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 15px; }
+  .subscription_text_field input::placeholder {
+    font-size: 14px;
+    font-family: Montserrat;
+    color: rgba(31, 32, 65, 0.25); }
+  .subscription_text_field input:hover {
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    box-sizing: border-box; }
+  .subscription_text_field input:focus {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    outline: none; }
+  .subscription_text_field .subscription_text_field__span {
+    margin-bottom: 5px; }
+  .subscription_text_field span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase; }
+
+.subscription_text_field__input_svg {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  line-height: 2.5;
+  padding-top: 5px; }
+  .subscription_text_field__input_svg svg {
+    padding-left: 15px; }
 

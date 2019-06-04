@@ -1,4 +1,4 @@
-.dropdown_vis {
+.dropdown_bedroom {
     width: 320px;
     height: 67px;
     display: flex;
@@ -31,7 +31,7 @@
         border: 1px solid rgba(31, 32, 65, 0.5);
         outline: none;
     }
-    .dropdown_vis__span {
+    .dropdown_bedroom__span {
         margin-bottom: 5px;
     }
     span {
@@ -44,7 +44,7 @@
     }
 }
 
-.dropdown_vis__input_svg {
+.dropdown_bedroom__input_svg {
     width: 44px;
     height: 44px;
     position: absolute;
@@ -58,7 +58,7 @@
 }
 
 
-.dropdown_content {
+.dropdown_bedroom_content {
     display: none;
     // display: flex;
     height: 160px;
@@ -141,3 +141,6 @@
     }
 }
 
+.dropdown_blocks {
+    display: flex;
+}
