@@ -24,12 +24,14 @@ function func() {
 
 var elem2 = document.querySelector('div.expendable_checkbox_list__svg');
 var elems2 = document.querySelector('div.expendable_checkbox_list__content');
-elem2.onclick = elems2.style.display = 'none';;
+
+elem2.onclick = elems2.style.display = 'none';
 function func2() {
+elem2.classList.toggle('expendable_checkbox_list__svgg');
     if (elems2.style.display == 'none') {
       elems2.style.display = 'inline-block';
     } else {
-      elems2.style.display = 'none'
+      elems2.style.display = 'none';
     }
   }
   elem2.onclick = func2;

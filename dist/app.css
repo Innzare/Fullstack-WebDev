@@ -839,13 +839,21 @@ span {
       text-transform: uppercase;
       color: #1F2041; }
     .expendable_checkbox_list_wrapper .expendable_checkbox_list .expendable_checkbox_list__svg {
-      width: 44px;
+      width: 14px;
       height: 14px;
       position: absolute;
       cursor: pointer;
       right: 0; }
       .expendable_checkbox_list_wrapper .expendable_checkbox_list .expendable_checkbox_list__svg svg {
         padding-bottom: 1px; }
+    .expendable_checkbox_list_wrapper .expendable_checkbox_list .expendable_checkbox_list__svgg {
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      cursor: pointer;
+      transform: rotate(180deg);
+      right: 0;
+      margin-top: 3px; }
   .expendable_checkbox_list_wrapper .expendable_checkbox_list__content {
     display: none;
     width: 275px;
@@ -863,26 +871,30 @@ span {
       line-height: 18px;
       color: rgba(31, 32, 65, 0.5);
       margin-bottom: 0px; }
-    .expendable_checkbox_list_wrapper .expendable_checkbox_list__content label::before {
-      content: '';
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      margin-right: 10px;
-      vertical-align: middle;
-      background: #FFFFFF;
-      border: 1px solid rgba(31, 32, 65, 0.25);
-      box-sizing: border-box;
-      border-radius: 4px; }
-    .expendable_checkbox_list_wrapper .expendable_checkbox_list__content input[type='checkbox']:checked + label::before {
-      text-align: center;
-      content: '';
-      background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIC00NiA0MTcuODEzMzMgNDE3IiB3aWR0aD0iNTEycHgiPjxwYXRoIGQ9Im0xNTkuOTg4MjgxIDMxOC41ODIwMzFjLTMuOTg4MjgxIDQuMDExNzE5LTkuNDI5Njg3IDYuMjUtMTUuMDgyMDMxIDYuMjVzLTExLjA5Mzc1LTIuMjM4MjgxLTE1LjA4MjAzMS02LjI1bC0xMjAuNDQ5MjE5LTEyMC40Njg3NWMtMTIuNS0xMi41LTEyLjUtMzIuNzY5NTMxIDAtNDUuMjQ2MDkzbDE1LjA4MjAzMS0xNS4wODU5MzhjMTIuNTAzOTA3LTEyLjUgMzIuNzUtMTIuNSA0NS4yNSAwbDc1LjE5OTIxOSA3NS4yMDMxMjUgMjAzLjE5OTIxOS0yMDMuMjAzMTI1YzEyLjUwMzkwNi0xMi41IDMyLjc2OTUzMS0xMi41IDQ1LjI1IDBsMTUuMDgyMDMxIDE1LjA4NTkzOGMxMi41IDEyLjUgMTIuNSAzMi43NjU2MjQgMCA0NS4yNDYwOTN6bTAgMCIgZmlsbD0iIzAwMDAwMCIvPjwvc3ZnPgo=);
-      background-size: 100%;
-      background: #FFFFFF;
-      border: 1px solid #BC9CFF;
-      box-sizing: border-box;
-      border-radius: 4px; }
     .expendable_checkbox_list_wrapper .expendable_checkbox_list__content ::selection {
       background: transparent; }
+    .expendable_checkbox_list_wrapper .expendable_checkbox_list__content .checklist__overlay {
+      margin-left: 1px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      top: 0px;
+      left: -1px;
+      background-color: white;
+      box-sizing: border-box; }
+    .expendable_checkbox_list_wrapper .expendable_checkbox_list__content .checklist__name {
+      display: inline-block;
+      margin-left: 30px;
+      margin-top: 0px;
+      margin-bottom: 0px; }
+    .expendable_checkbox_list_wrapper .expendable_checkbox_list__content .checklist__checkbox:checked + .checklist__overlay {
+      border: 1px solid #BC9CFF;
+      background-image: url("https://svgshare.com/getbyhash/sha1-hy2oPMJxARkVfIJ2Z8P4u6OaGiY=");
+      background-repeat: no-repeat;
+      background-position: 50%; }
+    .expendable_checkbox_list_wrapper .expendable_checkbox_list__content .checkbox_value {
+      margin-bottom: 8.5px; }
 
