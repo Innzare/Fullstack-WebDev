@@ -31,25 +31,45 @@
         width: 275px;
         margin-top: 18px;
         position: relative;
-        input {
-            width: 20px;
-            height: 20px;
-            margin-bottom: 10px;    
-            border: 1px solid #BC9CFF;
-            box-sizing: border-box;
-            border-radius: 4px;
+        input[type="checkbox"] {
+            display: none;
         }
-        
         label {
-            position: absolute;
-            margin-top: 4.5px;
-            margin-left: 5px;
+            display: flex;
+            align-items: center;
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
             line-height: 18px;
             color: rgba(31, 32, 65, 0.5);
+            margin-bottom: 0px;
+        }
+        label::before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            vertical-align: middle;
+            background: #FFFFFF;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+        input[type='checkbox']:checked + label::before {
+            text-align: center;
+            content: '';
+            background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIC00NiA0MTcuODEzMzMgNDE3IiB3aWR0aD0iNTEycHgiPjxwYXRoIGQ9Im0xNTkuOTg4MjgxIDMxOC41ODIwMzFjLTMuOTg4MjgxIDQuMDExNzE5LTkuNDI5Njg3IDYuMjUtMTUuMDgyMDMxIDYuMjVzLTExLjA5Mzc1LTIuMjM4MjgxLTE1LjA4MjAzMS02LjI1bC0xMjAuNDQ5MjE5LTEyMC40Njg3NWMtMTIuNS0xMi41LTEyLjUtMzIuNzY5NTMxIDAtNDUuMjQ2MDkzbDE1LjA4MjAzMS0xNS4wODU5MzhjMTIuNTAzOTA3LTEyLjUgMzIuNzUtMTIuNSA0NS4yNSAwbDc1LjE5OTIxOSA3NS4yMDMxMjUgMjAzLjE5OTIxOS0yMDMuMjAzMTI1YzEyLjUwMzkwNi0xMi41IDMyLjc2OTUzMS0xMi41IDQ1LjI1IDBsMTUuMDgyMDMxIDE1LjA4NTkzOGMxMi41IDEyLjUgMTIuNSAzMi43NjU2MjQgMCA0NS4yNDYwOTN6bTAgMCIgZmlsbD0iIzAwMDAwMCIvPjwvc3ZnPgo=);
+            background-size: 100%;
+            
+            background: #FFFFFF;
+            border: 1px solid #BC9CFF;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+        ::selection {
+            background: transparent;
         }
     }
         
