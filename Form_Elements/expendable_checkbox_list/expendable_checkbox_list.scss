@@ -1,0 +1,56 @@
+.expendable_checkbox_list_wrapper{
+    width: 275px;
+    margin-left: 140px;
+    .expendable_checkbox_list {
+        height: 14px;
+        position: relative;
+        margin-top: 50px;
+        display: flex;
+        span {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: #1F2041;
+        }
+        .expendable_checkbox_list__svg{
+            width: 44px;
+            height: 14px;
+            position: absolute;
+            cursor: pointer;
+            right: 0;
+            svg {
+                padding-bottom: 1px;
+            }
+        }
+    }
+    .expendable_checkbox_list__content {
+        display: none;
+        width: 275px;
+        margin-top: 18px;
+        position: relative;
+        input {
+            width: 20px;
+            height: 20px;
+            margin-bottom: 10px;    
+            border: 1px solid #BC9CFF;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+        
+        label {
+            position: absolute;
+            margin-top: 4.5px;
+            margin-left: 5px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            color: rgba(31, 32, 65, 0.5);
+        }
+    }
+        
+}

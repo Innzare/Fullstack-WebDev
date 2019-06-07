@@ -22,6 +22,17 @@ function func() {
     }
     elem1.onclick = func1;
 
+var elem2 = document.querySelector('div.expendable_checkbox_list__svg');
+var elems2 = document.querySelector('div.expendable_checkbox_list__content');
+elem2.onclick = elems2.style.display = 'none';;
+function func2() {
+    if (elems2.style.display == 'none') {
+      elems2.style.display = 'inline-block';
+    } else {
+      elems2.style.display = 'none'
+    }
+  }
+  elem2.onclick = func2;
 
 // Инициализация
 $('#my-element').datepicker([options])
