@@ -36,6 +36,21 @@ elem2.classList.toggle('expendable_checkbox_list__svgg');
   }
   elem2.onclick = func2;
 
+
+var air_datepicker_left_arrow = document.querySelector('svg');
+air_datepicker_left_arrow.setAttribute('d', 'M16.1755 8.01562V9.98438H3.98801L9.56613 15.6094L8.15988 17.0156L0.144258 9L8.15988 0.984375L9.56613 2.39062L3.98801 8.01562H16.1755Z');
+
+var datepicker_day_name = document.querySelector('div.datepicker--nav-title');
+datepicker_day_name.outerHTML = '<div><span></span></div>';
+
+
+
+
+
+
+
+
+
 // Инициализация
 $('#my-element').datepicker([options])
 
