@@ -79,8 +79,10 @@
 
    .datepicker--cell.datepicker--cell-day.-in-range- {
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    padding: 0 15px 0 15px;
     opacity: 0.25;
      color: rgba(6, 6, 10, 0.87);
+
    }
 
 .datepicker--cells {
@@ -181,7 +183,6 @@
       -ms-flex: 1;
           flex: 1;
   text-align: center;
-  text-transform: uppercase;
   font-size: .8em; }
 
 .datepicker--cell-day {
@@ -322,7 +323,7 @@
 
 .datepicker--content {
   box-sizing: content-box;
-  padding: 30px 20px 55px 20px; }
+  padding: 30px 20px 20px 20px; }
   .-only-timepicker- .datepicker--content {
     display: none; }
 
@@ -408,7 +409,7 @@
 .datepicker--nav-title,
 .datepicker--nav-action {
   border-radius: 4px;
-  padding: 0 8px;
+  padding: 0 18px;
   font-family: Quicksand;
   font-style: normal;
   font-weight: bold;
@@ -428,7 +429,6 @@
           justify-content: center; }
 
 .datepicker--nav-action {
-  width: 32px;
   border-radius: 4px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -439,11 +439,11 @@
   .datepicker--nav-action.-disabled- {
     visibility: hidden; }
   .datepicker--nav-action svg {
-    width: 32px;
-    height: 32px; }
+    width: 20px;
+    height: 20px; }
   .datepicker--nav-action path {
-    fill: none;
-    stroke: #BC9CFF;
+    /* fill: none;
+    stroke: #BC9CFF; */
     stroke-width: 2px; }
 
 .datepicker--nav-title {
@@ -475,15 +475,36 @@
     cursor: default;
     background: none; }
 
+    .datepicker--button[data-action = today] {
+      text-align: start;
+      color: #BC9CFF;
+    }
+
 .datepicker--buttons {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 4px;
-  border-top: 1px solid #efefef; }
+  padding: 4px 15px 4px 18px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  /* border-top: 1px solid #efefef; } */
+}
+span.datepicker--button {
+  max-width: 85px;
+}
 
 .datepicker--button {
-  color: #4EB5E6;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 15px;
+  
+  /* identical to box height */
+
+text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
   cursor: pointer;
   border-radius: 4px;
   -webkit-flex: 1;
