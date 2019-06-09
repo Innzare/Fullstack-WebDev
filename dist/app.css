@@ -1676,10 +1676,11 @@ span {
 
 .expendable_checkbox_list_wrapper {
   width: 275px;
-  margin-left: 140px; }
+  margin-left: 140px;
+  background-color: #fff;
+  position: relative; }
   .expendable_checkbox_list_wrapper .expendable_checkbox_list {
     height: 14px;
-    position: relative;
     margin-top: 50px;
     display: flex; }
     .expendable_checkbox_list_wrapper .expendable_checkbox_list span {
@@ -1710,7 +1711,9 @@ span {
     display: none;
     width: 275px;
     margin-top: 18px;
-    position: relative; }
+    position: absolute;
+    z-index: 1;
+    background-color: #fff; }
     .expendable_checkbox_list_wrapper .expendable_checkbox_list__content input[type="checkbox"] {
       display: none; }
     .expendable_checkbox_list_wrapper .expendable_checkbox_list__content label {
@@ -1753,7 +1756,7 @@ span {
 .innzare {
   width: 100px;
   height: 20px;
-  margin: 500px 0 0 150px; }
+  margin: 200px 0 0 150px; }
   .innzare span {
     font-family: Montserrat;
     font-style: normal;
@@ -1762,4 +1765,89 @@ span {
     line-height: 15px;
     text-transform: uppercase;
     color: #1F2041; }
+
+.comfort {
+  margin-left: 140px;
+  width: 290px;
+  margin-top: 285px; }
+  .comfort .comfort_smile {
+    display: flex;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+    padding-bottom: 20px; }
+    .comfort .comfort_smile .comfort_smile__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: Montserrat;
+      font-size: 14px; }
+      .comfort .comfort_smile .comfort_smile__text b {
+        font-weight: bold; }
+    .comfort .comfort_smile .comfort_smile__svg {
+      margin-right: 10px; }
+  .comfort .comfort_house {
+    display: flex;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .comfort .comfort_house .comfort_house__svg {
+      margin-right: 14px; }
+    .comfort .comfort_house .comfort_house__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: Montserrat;
+      font-size: 14px; }
+      .comfort .comfort_house .comfort_house__text b {
+        font-weight: bold;
+        margin-bottom: 3px; }
+      .comfort .comfort_house .comfort_house__text span {
+        margin-top: 3px; }
+
+.checkbox_buttons {
+  width: 275px;
+  margin-left: 90px;
+  margin-top: 140px;
+  background-color: #fff;
+  font-family: Montserrat; }
+  .checkbox_buttons #first {
+    margin-top: 10px; }
+  .checkbox_buttons b {
+    text-transform: uppercase;
+    font-size: 12px; }
+  .checkbox_buttons .checkbox_buttons__wrapper input {
+    display: none; }
+  .checkbox_buttons .checkbox_buttons__wrapper label {
+    display: flex;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+    margin-bottom: 0px; }
+  .checkbox_buttons .checkbox_buttons__wrapper ::selection {
+    background: transparent; }
+  .checkbox_buttons .checkbox_buttons__wrapper .checkbox_buttons_checklist__overlay {
+    margin-left: 1px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    top: 0px;
+    left: -1px;
+    background-color: white;
+    box-sizing: border-box; }
+  .checkbox_buttons .checkbox_buttons__wrapper .checkbox_buttons_checklist__checkbox:checked + .checkbox_buttons_checklist__overlay {
+    border: 1px solid #BC9CFF;
+    background-image: url("https://svgshare.com/getbyhash/sha1-hy2oPMJxARkVfIJ2Z8P4u6OaGiY=");
+    background-repeat: no-repeat;
+    background-position: 50%; }
+  .checkbox_buttons .checkbox_buttons__wrapper .checkbox_buttons_checkbox_value {
+    margin-bottom: 8.5px; }
+
+.ui_kit_blocks {
+  display: flex; }
 

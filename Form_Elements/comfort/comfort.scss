@@ -1,0 +1,47 @@
+.comfort {
+    margin-left: 140px;
+    width: 290px;
+    margin-top: 285px;
+    .comfort_smile {
+        display: flex;
+        border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+        padding-bottom: 20px;
+        .comfort_smile__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: Montserrat;
+            font-size: 14px;
+            b {
+                font-weight: bold;
+            }
+        }
+        .comfort_smile__svg {
+            margin-right: 10px;
+        }
+    }
+    .comfort_house {
+        display: flex;
+        border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .comfort_house__svg {
+            margin-right: 14px;
+        }
+        .comfort_house__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: Montserrat;
+            
+            font-size: 14px;
+            b {
+                font-weight: bold;
+                margin-bottom: 3px;
+            }
+            span {
+                margin-top: 3px;
+            }
+        }
+    }
+}

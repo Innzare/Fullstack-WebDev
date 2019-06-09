@@ -8,7 +8,7 @@ mixin date_dropdown(title)
                     <svg width="13" class="dropdown_vis__input_svgg" onclick='func(this);' height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.3301 0.578125L12.7363 1.98438L6.73633 7.98438L0.736328 1.98438L2.14258 0.578125L6.73633 5.17188L11.3301 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
                     </svg> 
-                input(type="text" placeholder="ДД.ММ.ГГГГ" class='datepicker-here' data-range="true" data-multiple-dates-separator=" - ")
+                input(type="text" placeholder="ДД.ММ.ГГГГ" class='datepicker-here' data-range="true" data-multiple-dates-separator=" - " id='start')
         .date_dropdown_field
             .date_dropdown_field__span
                 span= title
@@ -17,4 +17,4 @@ mixin date_dropdown(title)
                     <svg width="13" class='datepicker-here' class="dropdown_vis__input_svgg" onclick='func(this);' height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.3301 0.578125L12.7363 1.98438L6.73633 7.98438L0.736328 1.98438L2.14258 0.578125L6.73633 5.17188L11.3301 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
                     </svg> 
-                input(type="text" placeholder="ДД.ММ.ГГГГ" class='datepicker-here')
+                input(type="text" placeholder="ДД.ММ.ГГГГ" id='end')

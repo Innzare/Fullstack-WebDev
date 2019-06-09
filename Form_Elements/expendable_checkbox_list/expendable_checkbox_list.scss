@@ -1,9 +1,11 @@
 .expendable_checkbox_list_wrapper{
     width: 275px;
     margin-left: 140px;
+    background-color: #fff;
+    position: relative;
     .expendable_checkbox_list {
         height: 14px;
-        position: relative;
+        
         margin-top: 50px;
         display: flex;
         span {
@@ -40,7 +42,9 @@
         display: none;
         width: 275px;
         margin-top: 18px;
-        position: relative;
+        position: absolute;
+        z-index: 1;
+        background-color: #fff;
         input[type="checkbox"] {
             display: none;
         }
@@ -93,7 +97,7 @@
 .innzare {
     width: 100px;
     height: 20px;
-    margin: 500px 0 0 150px;
+    margin: 200px 0 0 150px;
 
     span {
         font-family: Montserrat;
