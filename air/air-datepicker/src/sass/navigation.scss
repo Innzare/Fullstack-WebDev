@@ -5,6 +5,7 @@
    ------------------------------------------------- */
 
 .datepicker--nav {
+  font-family: Quicksand;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid map_get($datepickerBorderColor, nav);
@@ -52,7 +53,7 @@
 .datepicker--nav-title {
   border-radius: $datepickerBorderRadius;
   padding: 0 8px;
-
+  font-family: Quicksand;
   i {
     font-style: normal;
     color: map_get($datepickerTextColor, navArrows);
