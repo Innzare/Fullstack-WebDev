@@ -1,0 +1,72 @@
+.radio_buttons{
+    width: 275px;
+    margin-left: 90px;
+    margin-top: 140px;
+    background-color: #fff; 
+    font-family: Montserrat;
+    b {
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .radio_buttons__container{
+        display: flex;
+        margin-top: 16px;
+        .radio_buttons__wrapper#first {
+            margin-right: 20px;
+        }
+    }
+    .radio_buttons__wrapper{
+        input {
+                display: none;
+        }
+        label {
+            display: flex;
+            align-items: center;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            color: rgba(31, 32, 65, 0.5);
+            margin-bottom: 0px;
+        }
+        ::selection {
+            background: transparent;
+        }
+        .radio_buttons_checklist__overlay {
+            margin-left: 1px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 22px;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            top: 0px;
+            left: -1px;
+            background-color: white;
+            box-sizing: border-box;
+        }
+        
+        .radio_buttons_checklist__checkbox:checked + .radio_buttons_checklist__overlay {
+            border: 1px solid #BC9CFF;
+            .radio_buttons_checklist__overlay__radio {
+                width: 12px;
+                height: 12px;
+                background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                border-radius: 10px;
+            }
+        }
+        .radio_buttons_checkbox_value {
+            margin-bottom: 8.5px;
+        } 
+    }
+}
+
+
+
+
+
+
