@@ -36,9 +36,21 @@ elem2.classList.toggle('expendable_checkbox_list__svgg');
   }
   elem2.onclick = func2;
 
+var like = document.querySelector('div.like_button_checklist__overlay');
+var like_span = document.querySelector('span#like_span');
 
+like.addEventListener('click', like1);
 
-
+function like1() {
+  like_span.innerHTML = +like_span.innerHTML + 0.5;
+  like.removeEventListener('click', like1);
+  like.addEventListener('click', like2);
+}
+function like2() {
+  like_span.innerHTML = +like_span.innerHTML - 0.5;
+  like.removeEventListener('click', like2);
+  like.addEventListener('click', like1);
+}
 
 
 

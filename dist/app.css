@@ -1854,7 +1854,7 @@ span {
 .radio_buttons {
   width: 275px;
   margin-left: 90px;
-  margin-top: 140px;
+  margin-top: 30px;
   background-color: #fff;
   font-family: Montserrat; }
   .radio_buttons b {
@@ -1907,7 +1907,7 @@ span {
 .toggle {
   width: 280px;
   margin-left: 90px;
-  margin-top: 140px;
+  margin-top: 30px;
   background-color: #fff;
   font-family: Montserrat; }
   .toggle b {
@@ -1963,5 +1963,69 @@ span {
       border-radius: 10px;
       margin-right: 4px; }
   .toggle .toggle__wrapper .toggle_checkbox_value {
+    margin-bottom: 9.5px; }
+
+.like_button {
+  width: 100px;
+  margin-left: 90px;
+  margin-top: 30px;
+  background-color: #fff;
+  font-family: Montserrat; }
+  .like_button b {
+    text-transform: uppercase;
+    font-size: 12px; }
+  .like_button .like_button__container {
+    display: flex;
+    margin-top: 16px; }
+    .like_button .like_button__container .like_button__wrapper#first {
+      margin-right: 20px; }
+  .like_button .like_button__wrapper input {
+    display: none; }
+  .like_button .like_button__wrapper label {
+    display: flex;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+    margin-bottom: 0px; }
+  .like_button .like_button__wrapper ::selection {
+    background: transparent; }
+  .like_button .like_button__wrapper .like_button_checklist__overlay {
+    margin-left: 1px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 22px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    top: 0px;
+    left: -1px;
+    background-color: white;
+    box-sizing: border-box; }
+    .like_button .like_button__wrapper .like_button_checklist__overlay .like_button_checklist__overlay__heart {
+      width: 20px;
+      height: 20px;
+      margin-bottom: 2px;
+      background: url("https://svgshare.com/i/DZj.svg") no-repeat;
+      background-position: 50%; }
+    .like_button .like_button__wrapper .like_button_checklist__overlay .like_button_checklist__overlay__heart_num {
+      margin-left: 2px;
+      font-size: 10px;
+      font-weight: bold;
+      color: rgba(31, 32, 65, 0.25); }
+  .like_button .like_button__wrapper .like_button_checklist__checkbox:checked + .like_button_checklist__overlay {
+    border: 1px solid #BC9CFF; }
+    .like_button .like_button__wrapper .like_button_checklist__checkbox:checked + .like_button_checklist__overlay .like_button_checklist__overlay__heart {
+      background: url("https://svgshare.com/i/DaV.svg") no-repeat;
+      background-position: 50%; }
+    .like_button .like_button__wrapper .like_button_checklist__checkbox:checked + .like_button_checklist__overlay .like_button_checklist__overlay__heart_num {
+      color: #BC9CFF; }
+  .like_button .like_button__wrapper .like_button_checkbox_value {
     margin-bottom: 8.5px; }
 
