@@ -1904,3 +1904,64 @@ span {
   .radio_buttons .radio_buttons__wrapper .radio_buttons_checkbox_value {
     margin-bottom: 8.5px; }
 
+.toggle {
+  width: 280px;
+  margin-left: 90px;
+  margin-top: 140px;
+  background-color: #fff;
+  font-family: Montserrat; }
+  .toggle b {
+    text-transform: uppercase;
+    font-size: 12px; }
+  .toggle .toggle__container {
+    display: flex;
+    margin-top: 16px; }
+    .toggle .toggle__container .toggle__wrapper#first {
+      margin-right: 20px; }
+  .toggle .toggle__wrapper input {
+    display: none; }
+  .toggle .toggle__wrapper label {
+    display: flex;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+    margin-bottom: 0px; }
+  .toggle .toggle__wrapper ::selection {
+    background: transparent; }
+  .toggle .toggle__wrapper .toggle_checklist__overlay {
+    margin-left: 1px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 22px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    top: 0px;
+    left: -1px;
+    background-color: white;
+    box-sizing: border-box; }
+    .toggle .toggle__wrapper .toggle_checklist__overlay .toggle_checklist__overlay__radio {
+      width: 12px;
+      height: 12px;
+      background: rgba(31, 32, 65, 0.25);
+      border-radius: 10px;
+      margin-left: 4px; }
+  .toggle .toggle__wrapper .toggle_checklist__checkbox:checked + .toggle_checklist__overlay {
+    border: 1px solid #BC9CFF;
+    justify-content: flex-end; }
+    .toggle .toggle__wrapper .toggle_checklist__checkbox:checked + .toggle_checklist__overlay .toggle_checklist__overlay__radio {
+      width: 12px;
+      height: 12px;
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      border-radius: 10px;
+      margin-right: 4px; }
+  .toggle .toggle__wrapper .toggle_checkbox_value {
+    margin-bottom: 8.5px; }
+
