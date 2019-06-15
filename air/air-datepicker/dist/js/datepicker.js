@@ -101,6 +101,8 @@
         },
         datepicker;
 
+        
+
     var Datepicker  = function (el, options) {
         this.el = el;
         this.$el = $(el);

@@ -27,6 +27,12 @@
             border-radius: 22px;
         }
     }
+    .button__click_me_one__active {
+        input{
+            opacity: 0.5;
+        }
+    }
+
     .button__click_me_two {
         margin-top: 30px;
         width: 97px;
@@ -51,6 +57,9 @@
             background-color: #fff;
         }
     }
+    .button__click_me_two__active {
+        background: linear-gradient(180deg, #DCCDFE 0%, #C5D1FC 100%);
+    }
     .button__click_me_three {
         margin-top: 30px;
         input {
@@ -64,6 +73,11 @@
             text-transform: uppercase;
             cursor: pointer;
             border: none;
+        }
+    }
+    .button__click_me_three__active {
+        input {
+            color: rgba(31, 32, 65, 0.5);; 
         }
     }
     .button__pay {

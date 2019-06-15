@@ -1,0 +1,79 @@
+.pagination {
+    width: 241px;
+    height: 106px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+    margin-top: 50px;
+    margin-left: 60px;
+    .pagination_pages {
+        display: flex;
+        margin-top: 16px;
+        margin-bottom: 10px;
+        .pagination_pageNum_one {
+            border-radius: 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        }
+        .pagination_pageNum_two {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(31, 32, 65, 0.5);
+        }
+        .pagination_pageNum_three {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            color: rgba(31, 32, 65, 0.5);
+        }
+        .pagination_pageNum_points {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            align-items: center;
+            color: rgba(31, 32, 65, 0.5);
+        }
+        .pagination_pageNum_fifthy {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            align-items: center;
+            color: rgba(31, 32, 65, 0.5);
+        }
+        .pagination_pageNum_index {
+            border-radius: 22px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            align-items: center;
+            color: white;
+            background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+        }
+    }
+    .pagination_text {
+        color: rgba(31, 32, 65, 0.5);
+    }
+}
