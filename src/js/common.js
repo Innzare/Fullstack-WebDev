@@ -1,4 +1,16 @@
-
+$( function() {
+  $( "#slider-range" ).slider({
+    range: true,
+    min: 0,
+    max: 500,
+    values: [ 75, 300 ],
+    slide: function( event, ui ) {
+      $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+    }
+  });
+  $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+    " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+} );
 // BUTTONS
     var buttonOne = document.querySelector('div.button__click_me_one');
     function buttonClickOne() {
@@ -89,22 +101,23 @@ $('#my-element').datepicker([options])
 // Доступ к экземпляру объекта
 $('#my-element').data('datepicker')
 
-var $start = $('#start'),
-    $end = $('#end');
+// var $start = $('#start'),
+//     $end = $('#end');
 
-$start.datepicker({
-    onSelect: function (fd, date) {
-        $end.data('datepicker')
-                .update('minDate', date);
+// $start.datepicker({
+//     onSelect: function (fd, date) {
+//         $end.data('datepicker')
+//                 .update('minDate', date);
 
-        $end.focus();
-    }
-})
+//         $end.focus();
+//     }
+// })
 
-$end.datepicker({
-    onSelect: function (fd, date) {
-        $start.data('datepicker')
-                .update('maxDate', date)
-    }
-})
+// $end.datepicker({
+//     onSelect: function (fd, date) {
+//         $start.data('datepicker')
+//                 .update('maxDate', date)
+//     }
+// })
+
 

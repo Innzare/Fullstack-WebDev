@@ -5,8 +5,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
-        
-        
+
         //- Подключение библиотеки jQuery
         link(rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")
         script(src="https://code.jquery.com/jquery-1.12.4.js")
@@ -15,6 +14,10 @@ html(lang="en")
         //- Подключение плагина Air-Datepicker
         link(href="../air/air-datepicker/dist/css/datepicker.css" rel="stylesheet" type="text/css")
         script(src="../air/air-datepicker/dist/js/datepicker.js")
+
+        //- //- Подключение плагина Range-slider
+        //- link(href="../jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet" type="text/css")
+        //- script(src="../jquery-ui-1.12.1.custom/jquery-ui.js")
 
         link(href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand&display=swap" rel="stylesheet")
         link(rel="stylesheet", href="app.css")
@@ -71,10 +74,19 @@ html(lang="en")
                 +toggle()
 
                 include Form_Elements/like_button/like_button
-                +like_button()
+                +like_button('like button', 'checkbox14')
 
                 include Form_Elements/rate_button/rate_button
                 +rate_button()
+
+                include Form_Elements/rich_checkbox_buttons/rich_checkbox_buttons
+                +rich_checkbox_buttons()
+                
+                include Form_Elements/billet_list/billet_list
+                +billet_list()
+
+                include Form_Elements/feedback_block/feedback_block
+                +feedback_block()
 
             .block3
                 include Form_Elements/buttons/buttons
@@ -82,6 +94,9 @@ html(lang="en")
 
                 include Form_Elements/pagination/pagination
                 +pagination()
+
+                include Form_Elements/range_slider/range_slider
+                +range_slider()
 
 
             

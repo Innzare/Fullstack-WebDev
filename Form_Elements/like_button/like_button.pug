@@ -1,10 +1,10 @@
-mixin like_button()
+mixin like_button(title, checkboxNum)
     .like_button
-        b like button 
+        b= title 
         .like_button__container
             .like_button__wrapper#first
-                label(for="checkbox14")  
-                    input(type="checkbox" id='checkbox14' class='like_button_checklist__checkbox')
+                label(for= checkboxNum)  
+                    input(type="checkbox" id= checkboxNum class='like_button_checklist__checkbox')
                     .like_button_checklist__overlay
                         .like_button_checklist__overlay__heart
                             
@@ -12,5 +12,3 @@ mixin like_button()
                         .like_button_checklist__overlay__heart_num
                             span#like_span 0
                     .like_button_checkbox_value
-
-                    

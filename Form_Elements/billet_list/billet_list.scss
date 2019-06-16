@@ -1,0 +1,36 @@
+.billet_list {
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 90px;
+    margin-top: 60px;
+    .billet_list_content {
+        margin-top: 16px;
+    }
+    span {
+        text-transform: initial;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+    }
+    .billet_list_points {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .billet_list_point {
+        width: 10px;height: 10px;background: rgba(31, 32, 65, 0.25); border-radius: 22px;
+        margin-right: 10px;
+    }
+    .billet_list_point#last {
+        margin-top: -22px;
+    }
+    .billet_list_point_text {
+        width: 270px;
+    }
+}

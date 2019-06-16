@@ -1,0 +1,45 @@
+.feedback_block {
+    width: 711px;
+    margin-left: 90px;
+    margin-top: 60px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    
+    .feedback_block_like_mixin {
+        margin-left: 0;
+    }
+    .feedback_block_name {
+        display: flex;
+        .feedback_block_name_name {
+            span {
+                color: rgba(31, 32, 65, 0.75);
+            }
+        }
+        .feedback_block_name_img {
+            margin-right: 10px;
+            img {
+                margin-left: -20px;
+                margin-top: -11px;
+            }
+            width: 48px;
+            height: 48px;
+            background-image: url('../../src/icons/feedback.png')
+        }
+    }
+    .feedback_block_like {
+        display: flex;
+        margin-top: 10px;
+        .like_button {
+            margin: 0;
+            .like_button__container {
+                margin-top: 0;
+            }
+        }
+        .feedback_block_like_comment {
+            margin-left: 15px;
+        }
+    }
+}
