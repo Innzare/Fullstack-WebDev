@@ -1,16 +1,4 @@
-$( function() {
-  $( "#slider-range" ).slider({
-    range: true,
-    min: 0,
-    max: 500,
-    values: [ 75, 300 ],
-    slide: function( event, ui ) {
-      $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-    }
-  });
-  $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-    " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-} );
+
 // BUTTONS
     var buttonOne = document.querySelector('div.button__click_me_one');
     function buttonClickOne() {
@@ -91,6 +79,26 @@ $( function() {
       like.addEventListener('click', like1);
     }
 
+    
+
+    var rangeSlider = document.getElementById('slider-range');
+
+    noUiSlider.create(rangeSlider, {
+      start: [5000, 10000],
+      connect: true,
+      range: {
+          'min': 0,
+          'max': 15000
+      }
+  });
+
+    var rangeSliderValueElement = document.getElementById('slider-range-value');
+
+    rangeSlider.noUiSlider.on('update', function (values, handle) {
+        rangeSliderValueElement.innerHTML = values[handle];
+    });
+    
+
 
 
 // AIRDATEPICKER
@@ -110,7 +118,7 @@ $('#my-element').data('datepicker')
 //                 .update('minDate', date);
 
 //         $end.focus();
-//     }
+//     } 
 // })
 
 // $end.datepicker({

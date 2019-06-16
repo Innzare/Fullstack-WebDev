@@ -33,6 +33,7 @@
   "dependencies": {
     "air-datepicker": "^2.2.3",
     "jquery": "^3.4.1",
+    "nouislider": "^13.1.5",
     "popper.js": "^1.15.0"
   }
 }

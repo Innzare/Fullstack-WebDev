@@ -37,6 +37,9 @@
         margin-top: 30px;
         width: 97px;
         border-radius: 23px;
+        
+            
+            
         padding: 2px;
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
         input{
@@ -52,11 +55,15 @@
             outline: none;
             width: 97px;
             height: 42px;
+            border: 2px solid;
+            border-image-source:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
+            border-image-slice: 1;
             border: none;
             border-radius: 22px;
             background-color: #fff;
         }
     }
+    
     .button__click_me_two__active {
         background: linear-gradient(180deg, #DCCDFE 0%, #C5D1FC 100%);
     }

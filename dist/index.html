@@ -10,6 +10,8 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link href="../air/air-datepicker/dist/css/datepicker.css" rel="stylesheet" type="text/css">
     <script src="../air/air-datepicker/dist/js/datepicker.js"></script>
+    <link href="../jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="../jquery-ui-1.12.1.custom/jquery-ui.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
     <script src="app.js"></script>
@@ -393,6 +395,7 @@
 </svg>
                     </div>
                   </div>
+                  <div class="button__paypay"> </div>
                 </div>
                 <div class="pagination">pagination
                   <div class="pagination_pages">
@@ -409,10 +412,9 @@
                   </div>
                   <div class="pagination_text">1 – 12 из 100+ вариантов аренды</div>
                 </div>
-                <p>
-                  <label range:></label>
-                  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-                </p>
+                <div class="range_slider">диапазон цены
+                  <div id="slider-range-value">   </div>
+                </div>
                 <div id="slider-range"></div>
       </div>
     </div>
