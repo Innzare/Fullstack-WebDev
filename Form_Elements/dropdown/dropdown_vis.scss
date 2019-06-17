@@ -75,11 +75,13 @@
     border-bottom-left-radius: 4px;
     justify-content: space-between; 
     margin-top: -2px;
+    position: relative;
     .dropdown_content__human {
         display: flex;
         flex-direction: column;
         padding-left: 15px;
         padding-top: 10px;
+        width: 90px;
         span {
             margin-bottom: 22px;
         }
@@ -102,6 +104,10 @@
         flex-direction: column;
         text-align: center;
         color: rgba(31, 32, 65, 0.5);
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
         .dropdown_content__human_amount_minus {
             border: 1px solid rgba(31, 32, 65, 0.25);
             box-sizing: border-box;

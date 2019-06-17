@@ -26,7 +26,7 @@
     elem.onclick = elems.style.display = 'none';;
     function func() {
         if (elems.style.display == 'none') {
-          elems.style.display = 'flex';
+          elems.style.display = 'inline-block';
         } else {
           elems.style.display = 'none'
         }
@@ -38,7 +38,7 @@
     elem1.onclick = elems1.style.display = 'none';;
     function func1() {
         if (elems1.style.display == 'none') {
-          elems1.style.display = 'flex';
+          elems1.style.display = 'inline-block';
         } else {
           elems1.style.display = 'none'
         }
