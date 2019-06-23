@@ -1,8 +1,8 @@
-mixin date_dropdown(title)
+mixin date_dropdown(come, out)
     .date_dropdown
         .date_dropdown_field
             .date_dropdown_field__span
-                span= title
+                span= come
             .date_dropdown_field__input
                 .date_dropdown__input_svg
                     <svg width="13" class="dropdown_vis__input_svgg" onclick='func(this);' height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -11,7 +11,7 @@ mixin date_dropdown(title)
                 input(type="text" placeholder="ДД.ММ.ГГГГ" class='datepicker-here' data-range="true" data-multiple-dates-separator=" - " id='start')
         .date_dropdown_field
             .date_dropdown_field__span
-                span= title
+                span= out
             .date_dropdown_field__input 
                 .date_dropdown__input_svg
                     <svg width="13" class='datepicker-here' class="dropdown_vis__input_svgg" onclick='func(this);' height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
