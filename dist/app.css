@@ -853,7 +853,7 @@ text-transform: uppercase;
   height: 67px;
   display: flex;
   margin-left: 140px;
-  margin-top: 200px;
+  margin-top: 60px;
   flex-direction: column;
   /* webkit */
   /* Firefox 19+ */
@@ -1427,9 +1427,6 @@ text-transform: uppercase;
     margin-bottom: 5px;
     padding-top: 4px;
     cursor: pointer; }
-
-.dropdown_blocks {
-  display: flex; }
 
 .date_dropdown {
   display: flex;
@@ -2332,6 +2329,9 @@ text-transform: uppercase;
 
 .ui_kit_blocks {
   display: flex; }
+
+.block3 {
+  margin-left: -300px; }
 
 .billet_list {
   text-transform: uppercase;
