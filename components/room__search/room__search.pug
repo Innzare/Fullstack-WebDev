@@ -1,9 +1,9 @@
-include ../../Form_Elements/buttons/buttons
-mixin room__search()    
+mixin room__search() 
+    include ../../Form_Elements/buttons/buttons   
     .room__search__wrapper 
         .room__search__wrapper_text 
             span Найдём номера под ваши пожелания
         +date_dropdown('прибытие', 'выезд')
         +dropdown_vis('гости')
-        +button__pay()
+        +button__pay('подобрать номер')
             

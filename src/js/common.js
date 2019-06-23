@@ -4,26 +4,26 @@
     function buttonClickOne() {
       buttonOne.classList.toggle('button__click_me_one__active');
     }
-    buttonOne.onclick = buttonClickOne;
+buttonOne.onclick = buttonClickOne;
 
     var buttonTwo = document.querySelector('div.button__click_me_two');
     function buttonClickTwo() {
       buttonTwo.classList.toggle('button__click_me_two__active');
     }
-    buttonTwo.onclick = buttonClickTwo;
+buttonTwo.onclick = buttonClickTwo;
 
     var buttonThree = document.querySelector('div.button__click_me_three');
     function buttonClickThree() {
       buttonThree.classList.toggle('button__click_me_three__active');
     }
-    buttonThree.onclick = buttonClickThree;
+buttonThree.onclick = buttonClickThree;
 
 
 
 // DROPDOWN
     var elem = document.querySelector('div.dropdown_vis__input_svg');
-    var elems = document.getElementById('test1');
-    elem.onclick = elems.style.display = 'none';;
+    var elems = document.querySelector('#test1');
+    elem.onclick = elems.style.display = 'none';
     function func() {
         if (elems.style.display == 'none') {
           elems.style.display = 'inline-block';
@@ -31,11 +31,11 @@
           elems.style.display = 'none'
         }
       }
-      elem.onclick = func;
+elem.onclick = func;
 
     var elem1 = document.querySelector('div.dropdown_bedroom__input_svg');
     var elems1 = document.querySelector('div.dropdown_bedroom_content');
-    elem1.onclick = elems1.style.display = 'none';;
+    elem1.onclick = elems1.style.display = 'none';
     function func1() {
         if (elems1.style.display == 'none') {
           elems1.style.display = 'inline-block';
@@ -43,7 +43,7 @@
           elems1.style.display = 'none'
         }
       }
-      elem1.onclick = func1;
+elem1.onclick = func1;
 
 
 // CHECKBOX
@@ -59,7 +59,7 @@
           elems2.style.display = 'none';
         }
       }
-    elem2.onclick = func2;
+elem2.onclick = func2;
 
 
 // LIKE BUTTON
@@ -79,8 +79,9 @@
       like.addEventListener('click', like1);
     }
 
-    
 
+    
+// RANGE-SLIDER
     var rangeSlider = document.getElementById('slider-range');
 
     noUiSlider.create(rangeSlider, {
@@ -96,10 +97,8 @@
 
     rangeSlider.noUiSlider.on('update', function (values) {
         rangeSliderValueElement.innerHTML = values.join(' - ') + ' ₽';
-        
     });
     
-
 
 
 // AIRDATEPICKER
@@ -110,23 +109,5 @@ $('#my-element').datepicker([options])
 // Доступ к экземпляру объекта
 $('#my-element').data('datepicker')
 
-// var $start = $('#start'),
-//     $end = $('#end');
-
-// $start.datepicker({
-//     onSelect: function (fd, date) {
-//         $end.data('datepicker')
-//                 .update('minDate', date);
-
-//         $end.focus();
-//     } 
-// })
-
-// $end.datepicker({
-//     onSelect: function (fd, date) {
-//         $start.data('datepicker')
-//                 .update('maxDate', date)
-//     }
-// })
 
 

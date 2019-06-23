@@ -14,6 +14,7 @@
     .feedback_block_name {
         display: flex;
         .feedback_block_name_name {
+            color: rgba(31, 32, 65, 0.75);
             span {
                 color: rgba(31, 32, 65, 0.75);
             }
@@ -40,6 +41,7 @@
         }
         .feedback_block_like_comment {
             margin-left: 15px;
+            color: rgba(31, 32, 65, 0.75);
         }
     }
 }

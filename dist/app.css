@@ -1554,7 +1554,7 @@ text-transform: uppercase;
   .date_dropdown_field input::placeholder {
     font-size: 14px;
     font-family: Montserrat;
-    color: rgba(31, 32, 65, 0.25); }
+    color: rgba(31, 32, 65, 0.75); }
   .date_dropdown_field input:hover {
     background: #FFFFFF;
     border: 1px solid rgba(31, 32, 65, 0.5);
@@ -1818,7 +1818,8 @@ text-transform: uppercase;
       flex-direction: column;
       justify-content: space-between;
       font-family: Montserrat;
-      font-size: 14px; }
+      font-size: 14px;
+      color: rgba(31, 32, 65, 0.75); }
       .comfort .comfort_smile .comfort_smile__text b {
         font-weight: bold; }
     .comfort .comfort_smile .comfort_smile__svg {
@@ -1835,6 +1836,7 @@ text-transform: uppercase;
       flex-direction: column;
       justify-content: space-between;
       font-family: Montserrat;
+      color: rgba(31, 32, 65, 0.75);
       font-size: 14px; }
       .comfort .comfort_house .comfort_house__text b {
         font-weight: bold;
@@ -2218,13 +2220,7 @@ text-transform: uppercase;
       background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
       color: white;
       outline: none;
-      font-family: Montserrat;
-      font-style: normal;
-      border: none;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 15px;
-      text-transform: uppercase; }
+      border: none; }
     .buttons .button__pay .button__pay_svg {
       width: 44px;
       height: 44px;
@@ -2247,11 +2243,11 @@ text-transform: uppercase;
     border-radius: 22px;
     cursor: pointer;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    color: white;
     outline: none;
+    border: none;
+    color: white;
     font-family: Montserrat;
     font-style: normal;
-    border: none;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -2338,7 +2334,8 @@ text-transform: uppercase;
       color: white;
       background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); }
   .pagination .pagination_text {
-    color: rgba(31, 32, 65, 0.5); }
+    color: rgba(31, 32, 65, 0.75);
+    font-weight: normal; }
 
 .range_slider {
   margin-top: 70px;
@@ -2464,8 +2461,10 @@ text-transform: uppercase;
     margin-left: 0; }
   .feedback_block .feedback_block_name {
     display: flex; }
-    .feedback_block .feedback_block_name .feedback_block_name_name span {
+    .feedback_block .feedback_block_name .feedback_block_name_name {
       color: rgba(31, 32, 65, 0.75); }
+      .feedback_block .feedback_block_name .feedback_block_name_name span {
+        color: rgba(31, 32, 65, 0.75); }
     .feedback_block .feedback_block_name .feedback_block_name_img {
       margin-right: 10px;
       width: 48px;
@@ -2482,7 +2481,8 @@ text-transform: uppercase;
       .feedback_block .feedback_block_like .like_button .like_button__container {
         margin-top: 0; }
     .feedback_block .feedback_block_like .feedback_block_like_comment {
-      margin-left: 15px; }
+      margin-left: 15px;
+      color: rgba(31, 32, 65, 0.75); }
 
 /*! nouislider - 13.1.5 - 4/24/2019 */
 /* Functional styling;
