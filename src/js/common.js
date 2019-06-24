@@ -33,6 +33,9 @@ buttonThree.onclick = buttonClickThree;
       }
 elem.onclick = func;
 
+
+
+
     var elem1 = document.querySelector('div.dropdown_bedroom__input_svg');
     var elems1 = document.querySelector('div.dropdown_bedroom_content');
     elem1.onclick = elems1.style.display = 'none';
