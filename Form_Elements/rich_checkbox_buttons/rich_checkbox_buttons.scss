@@ -76,7 +76,15 @@
 
 .ui_kit_blocks {
     display: flex;
+    flex-wrap: wrap;
 }
 .block3 {
-    margin-left: -300px;
+    margin-left: -135px;
+}
+.block2 {
+    margin-left: 250px;
+}
+.block4 {
+    display: flex;
+    flex-wrap: wrap;
 }

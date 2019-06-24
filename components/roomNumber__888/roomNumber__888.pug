@@ -1,0 +1,37 @@
+mixin roomNumber__888()
+    include ../../Form_Elements/buttons/buttons
+    .roomNumber__888
+        .number_price   
+            .number 
+                span № 
+                    span 888 
+                        span.luxe люкс
+            .price 
+                span 9 990P 
+                    span в сутки
+        +date_dropdown('прибытие', 'выезд')
+        +dropdown_vis('гости')
+        .price_information  
+            .services   
+                .day_amount 9 990₽ х 4 суток
+                .services_price  39 960₽
+            .dop_services
+                .sale Сбор за услуги: скидка 2 179₽
+                    .info 
+                        span i
+                .dop_services_price 0₽
+            .dop_services_tax 
+                .dop_services_tax_info Сбор за дополнительные услуги
+                .info 
+                    span i
+                .dop_services_tax_price 300₽
+            .total
+                .total_text Итого
+                .total_border
+                .total_price 38 081₽  
+        +button__pay('Забронировать')  
+
+
+                
+                
+        

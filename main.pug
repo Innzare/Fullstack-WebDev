@@ -60,8 +60,7 @@ html(lang="en")
                 include Form_Elements/comfort/comfort
                 +comfort()
 
-                include components/room__search/room__search
-                +room__search()
+                
 
             .block2
                 include Form_Elements/checkbox_buttons/checkbox_buttons
@@ -98,6 +97,13 @@ html(lang="en")
 
                 include Form_Elements/range_slider/range_slider
                 +range_slider('диапазон цены')
+
+            .block4
+                include components/room__search/room__search
+                +room__search()
+
+                include components/roomNumber__888/roomNumber__888
+                +roomNumber__888()
 
 
             

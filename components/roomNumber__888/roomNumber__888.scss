@@ -1,0 +1,199 @@
+.roomNumber__888 {
+    width: 380px;
+    height: 531px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-left: 40px;
+    margin-top: 40px;
+    .date_dropdown {
+        margin: 0 auto;
+    }
+    .dropdown_vis {
+        margin: 0 auto;
+    }
+    .date_dropdown_field {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .number_price {
+        width: 320px;
+        margin: 40px auto 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+        .number {
+            span {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 15px;
+                span {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 26px;
+                    line-height: 15px;
+                    color: #1F2041;
+                    .luxe {
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 15px;
+                        text-transform: uppercase;
+                        color: #BC9CFF;
+                    }
+                }
+            }
+        }
+        .price {
+            display: flex;
+            align-items: flex-end;
+            span{
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 15px;
+                color: rgba(31, 32, 65, 0.5);
+                margin-bottom: 0;
+                span {
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    .price_information {
+        width: 320px;
+        margin: 20px auto;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+        .services {
+            display: flex;
+            justify-content: space-between;
+        }
+        .dop_services {
+            display: flex;
+            justify-content: space-between; 
+            margin-top: 10px;
+            margin-bottom: 10px;
+            .sale {
+                display: flex;
+                text-align: center;
+                align-items: center;
+                .info {
+                    cursor: pointer;
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid rgba(31, 32, 65, 0.25);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: 10px;
+                    box-sizing: border-box;
+                    border-radius: 22px;
+                    margin-left: 5px;
+                    span {
+                        margin-top: -10px;
+                        color: rgba(21, 22, 37, 0.288);
+                    }
+                }
+            }
+        }
+        .dop_services_tax {
+            display: flex;
+            justify-content: flex-start; 
+            .dop_services_tax_info {
+                display: flex;
+                width: 214px;  
+            }
+            .info {
+                cursor: pointer;
+                width: 20px;
+                height: 20px;
+                border: 1px solid rgba(31, 32, 65, 0.25);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 3px;
+                // padding-top: 10px;
+                box-sizing: border-box;
+                border-radius: 22px;
+                margin-left: 5px;
+                span {
+                    // margin-top: -10px;
+                    color: rgba(21, 22, 37, 0.288);
+                }
+            }
+            .dop_services_tax_price {
+                margin-left: auto;
+            }
+        }
+        .total {
+            display: flex;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 19px;
+            line-height: 24px;
+            color: #1F2041;
+            .total_border {
+                width: 173px;
+                height: 1px;
+                border-bottom: 1px dotted rgba(31, 32, 65, 0.25);
+                box-sizing: border-box;
+                margin: auto 5px 5px 5px;
+                
+            }
+        }
+    }
+    .button__pay {
+        margin: 27px auto;
+        position: relative;
+        width: 320px;
+        margin-bottom: 30px;
+        input {
+            width: 320px;
+            height: 44px;
+            border-radius: 22px;
+            cursor: pointer;
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            color: white;
+            margin: 0 auto;
+            outline: none;
+            font-family: Montserrat;
+            font-style: normal;
+            border: none;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            text-transform: uppercase;
+        }
+        .button__pay_svg {
+            width: 44px;
+            height: 44px;
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            right: 0;
+            line-height: 2.5;
+            padding-top: 5px;
+            svg {
+                padding-top: 7px;
+                padding-left: 10px;
+            }
+        }
+    }
+}
