@@ -2374,6 +2374,7 @@ text-transform: uppercase;
     .buttons .button__click_me_three input {
       color: #BC9CFF;
       background-color: #fff;
+      font-family: Montserrat;
       font-style: normal;
       font-weight: bold;
       font-size: 12px;
@@ -2445,7 +2446,7 @@ text-transform: uppercase;
   height: 106px;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
