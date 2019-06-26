@@ -1,4 +1,15 @@
+window.onload = function() {
 
+  $(document).ready(function(){
+    $('.slider').slick({
+      dots: true,
+      centerMode: true,
+      slidesToShow: 1,
+      slidesToScroll: 3
+  });
+});
+
+  
 // BUTTONS
     var buttonOne = document.querySelector('div.button__click_me_one');
     function buttonClickOne() {
@@ -18,7 +29,7 @@ buttonTwo.onclick = buttonClickTwo;
     }
 buttonThree.onclick = buttonClickThree;
 
-
+$('.slider').slick();
 
 // DROPDOWN
     var elem = document.querySelector('div.dropdown_vis__input_svg');
@@ -47,7 +58,6 @@ elem.onclick = func;
         }
       }
 elem1.onclick = func1;
-
 
 // CHECKBOX
     var elem2 = document.querySelector('div.expendable_checkbox_list__svg');
@@ -101,16 +111,20 @@ elem2.onclick = func2;
     rangeSlider.noUiSlider.on('update', function (values) {
         rangeSliderValueElement.innerHTML = values.join(' - ') + ' ₽';
     });
-    
-
+}
 
 // AIRDATEPICKER
-
 // Инициализация
 $('#my-element').datepicker([options])
 
-// Доступ к экземпляру объекта
-$('#my-element').data('datepicker')
+// // Доступ к экземпляру объекта
+// $('#my-element').data('datepicker')
 
-
-
+$(document).on('ready', function() {
+  $('.slider').slick({
+      dots: true,
+      centerMode: true,
+      slidesToShow: 1,
+      slidesToScroll: 3
+  });
+});
