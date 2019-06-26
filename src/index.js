@@ -1,4 +1,4 @@
-// import './../node_modules/jquery/dist/jquery';
+import './../node_modules/jquery/dist/jquery';
 import 'popper.js';
 import './js/common';
 import './../air/air-datepicker/dist/js/datepicker.js';

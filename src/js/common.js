@@ -118,7 +118,7 @@ elem2.onclick = func2;
 $('#my-element').datepicker([options])
 
 // // Доступ к экземпляру объекта
-// $('#my-element').data('datepicker')
+$('#my-element').data('datepicker')
 
 $(document).on('ready', function() {
   $('.slider').slick({
