@@ -1,15 +1,4 @@
-window.onload = function() {
 
-  $(document).ready(function(){
-    $('.slider').slick({
-      dots: true,
-      centerMode: true,
-      slidesToShow: 1,
-      slidesToScroll: 3
-  });
-});
-
-  
 // BUTTONS
     var buttonOne = document.querySelector('div.button__click_me_one');
     function buttonClickOne() {
@@ -29,7 +18,6 @@ buttonTwo.onclick = buttonClickTwo;
     }
 buttonThree.onclick = buttonClickThree;
 
-$('.slider').slick();
 
 // DROPDOWN
     var elem = document.querySelector('div.dropdown_vis__input_svg');
@@ -43,9 +31,6 @@ $('.slider').slick();
         }
       }
 elem.onclick = func;
-
-
-
 
     var elem1 = document.querySelector('div.dropdown_bedroom__input_svg');
     var elems1 = document.querySelector('div.dropdown_bedroom_content');
@@ -82,12 +67,12 @@ elem2.onclick = func2;
     like.addEventListener('click', like1);
 
     function like1() {
-      like_span.innerHTML = +like_span.innerHTML + 0.5;
+      like_span.innerHTML = +like_span.innerHTML + 1;
       like.removeEventListener('click', like1);
       like.addEventListener('click', like2);
     }
     function like2() {
-      like_span.innerHTML = +like_span.innerHTML - 0.5;
+      like_span.innerHTML = +like_span.innerHTML - 1;
       like.removeEventListener('click', like2);
       like.addEventListener('click', like1);
     }
@@ -111,7 +96,7 @@ elem2.onclick = func2;
     rangeSlider.noUiSlider.on('update', function (values) {
         rangeSliderValueElement.innerHTML = values.join(' - ') + ' ₽';
     });
-}
+
 
 // AIRDATEPICKER
 // Инициализация
@@ -120,11 +105,3 @@ $('#my-element').datepicker([options])
 // // Доступ к экземпляру объекта
 $('#my-element').data('datepicker')
 
-$(document).on('ready', function() {
-  $('.slider').slick({
-      dots: true,
-      centerMode: true,
-      slidesToShow: 1,
-      slidesToScroll: 3
-  });
-});
