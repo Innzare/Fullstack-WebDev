@@ -1,9 +1,10 @@
-.enter__wrapper
-    .enter__text
-        h1(class='enter__h1') Войти
-    .enter__input_in
-        input(type="text")
-    .enter__input_out
-        input(type="text")
-    .enter__input_button
-        input(type="button" value='подобрать номер')
+mixin enter()
+    .enter
+        .enter_text Войти
+        .enter_inputs
+            +text_field('', 'Email')
+            +text_field('', 'Пароль')
+            +button__pay('войти')
+        .enter_createButton
+            span Нет аккаунта на Toxin?
+            +button__click_me_two('click me')

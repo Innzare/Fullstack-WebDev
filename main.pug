@@ -23,7 +23,7 @@ html(lang="en")
         .ui_kit_blocks
             .block1
                 include Form_Elements/text_field/text_field
-                +text_field('Данные')
+                +text_field('Данные', 'Email')
                 .ico_svg
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M23.9989 32.4712C23.2224 32.4712 22.5871 31.8359 22.5871 31.0594C22.5871 25.6241 18.14 21.177 12.7047 21.177C11.9283 21.177 11.293 20.5418 11.293 19.7653C11.293 18.9888 11.9283 18.3535 12.7047 18.3535C19.7283 18.3535 25.4106 24.0359 25.4106 31.0594C25.4106 31.8359 24.7753 32.4712 23.9989 32.4712Z" fill="#1F2041" fill-opacity="0.25"/>
@@ -89,6 +89,7 @@ html(lang="en")
                 include Form_Elements/buttons/buttons
                 +buttons()
                 +button__pay('перейти к оплате')
+                +button__click_me_two('click me')
 
                 include Form_Elements/pagination/pagination
                 +pagination()
@@ -112,6 +113,10 @@ html(lang="en")
 
                     include components/840_room/room_840
                     +840_room()
+
+                include components/enter/enter
+                +enter()
+
 
 
             

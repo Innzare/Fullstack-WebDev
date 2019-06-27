@@ -1,6 +1,6 @@
-mixin text_field(title)
+mixin text_field(title, value)
     .text_field
         .text_field__span
             span= title
         .text_field__input 
-            input(type="text" placeholder="Email")
+            input(type="text" placeholder= value)

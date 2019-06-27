@@ -1,9 +1,8 @@
-mixin buttons()
+mixin buttons(title)
     .buttons buttons
         .button__click_me_one
             input(type="button" value='click me') 
-        .button__click_me_two
-            input(type="button" value='click me')
+
         .button__click_me_three
             input(type="button" value='click me')
 mixin button__pay(title)
@@ -16,4 +15,6 @@ mixin button__pay(title)
         .button__paypay 
             
 
-
+mixin button__click_me_two(title)
+    .button__click_me_two
+        input(type="button" value= title)
