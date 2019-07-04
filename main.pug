@@ -65,10 +65,10 @@ html(lang="en")
                 +checkbox_buttons()
 
                 include Form_Elements/radio_buttons/radio_buttons
-                +radio_buttons()
+                +radio_buttons('radio buttons', 'checkbox11', 'checkbox12')
 
                 include Form_Elements/toggle/toggle
-                +toggle()
+                +toggle('toggle', 'checkbox13')
 
                 include Form_Elements/like_button/like_button
                 +like_button('like button', 'checkbox14')
@@ -116,6 +116,9 @@ html(lang="en")
 
                 include components/enter/enter
                 +enter()
+
+                include components/registration/registration
+                +registration()
 
 
 

@@ -1,0 +1,18 @@
+mixin registration()
+    .registration
+        .registration_text Регистрация аккаунта
+        +text_field('', 'Имя')
+        +text_field('', 'Фамилия')
+        .registration_radioButtons
+            +radio_buttons('', 'radio22', 'radio23')
+        +masked_text_field('дата рождения')
+        .registration_email
+            +text_field('данные для входа в сервис', 'Email')
+        .registration_password
+            +text_field(' ', 'Пароль')
+        +toggle()
+        +button__pay('перейти к оплате')
+        .registration_account
+            span Уже есть аккаунт на Toxin
+            +button__click_me_two('войти')
+        

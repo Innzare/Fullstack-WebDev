@@ -1,10 +1,10 @@
-mixin toggle()
+mixin toggle(title, toggleName)
     .toggle
-        b toggle 
+        b= title 
         .toggle__container
             .toggle__wrapper#first
-                label(for="checkbox13")  
-                    input(type="checkbox" id='checkbox13' class='toggle_checklist__checkbox')
+                label(for= toggleName)  
+                    input(type="checkbox" id= toggleName class='toggle_checklist__checkbox')
                     .toggle_checklist__overlay
                         .toggle_checklist__overlay__radio
                     .toggle_checkbox_value
