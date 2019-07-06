@@ -87,7 +87,9 @@ html(lang="en")
 
             .block3
                 include Form_Elements/buttons/buttons
-                +buttons()
+                
+                +buttons('butons')
+                +button__one('click me')
                 +button__pay('перейти к оплате')
                 +button__click_me_two('click me')
 
@@ -119,6 +121,13 @@ html(lang="en")
 
                 include components/registration/registration
                 +registration()
+        
+        include Header&Footer/header_autorize/header_autorize
+        +header_autorize()
+
+        include Header&Footer/header/header
+        +header()
+
 
 
 

@@ -1,0 +1,73 @@
+.header{
+    width: 100%;
+    margin-top: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    .header__content {
+        width: 1140px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        .header__content__nav {
+            .button__click_me_two {
+                margin: 0;
+                width: 79px;
+                height: 34px;
+                input {
+                    width: 79px;
+                    height: 34px;
+                }
+            }
+            .button__click_me_one {
+                margin: 0;
+                margin-left: 20px;
+                width: 101px;
+                height: 38px;
+                input {
+                    width: 101px;
+                    height: 38px;
+                }
+            }
+            ul {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                .header_wtf {
+                    width: 1px;
+                    height: 30px;
+                    background: rgba(31, 32, 65, 0.1);
+                    margin-right: 30px;
+                }
+                li {
+                    margin-right: 30px;
+                    a {
+                        text-decoration: none;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: rgba(31, 32, 65, 0.5);
+                        }
+                    a:hover {
+                        color: rgba(9, 9, 14, 0.829);;
+                    }
+                    a.active {
+                        font-weight: bold;
+                        text-decoration: none;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: rgba(31, 32, 65, 0.75);;
+                    }
+                }
+                li.last {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
