@@ -51,4 +51,44 @@
             margin: 0;
         }
     }
+    @media screen and (max-width: 1637px){
+        margin-top: -150px;
+        margin-left: 140px;
+    }
+    @media screen and (max-width: 1636px){
+        margin-top: -140px;
+        margin-left: -320px;
+    }
+    @media screen and (max-width: 1332px){
+        margin: 0;
+        
+    }
+}
+
+ .block4{   
+    @media screen and (max-width: 1332px){
+        margin: 0;
+        align-items: center;
+        justify-content: space-between;
+        .roomNumber__888 {
+            margin-right: 50px;
+        }
+        .enter {
+            margin-right: 50px;
+        }
+    }
+    .rooms_block {
+        @media screen and (max-width: 1637px){
+            margin-top: 0px;
+            padding-left: 0px;
+        }
+        @media screen and (max-width: 1636px){
+            margin-top: 230px;
+            margin-left: 140px;
+        }
+        @media screen and (max-width: 1332px){
+            margin: 0;
+            
+        }
+    }
 }

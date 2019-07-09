@@ -1,0 +1,119 @@
+.big_footer {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    ul {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1F2041;
+        list-style: none;
+        padding-left: 0;
+        li {
+            margin-top: 20px;
+        }
+    }
+    a {
+        font-family: Montserrat;
+        text-transform: initial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(31, 32, 65, 0.5);
+        text-decoration: none;
+        &:hover {
+            color: rgba(3, 3, 5, 0.808);
+        }
+    }
+    &__main {
+        flex-basis: 1140px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 140px;
+        padding-bottom: 100px;
+        &__logo {
+            width: 260px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            color: rgba(31, 32, 65, 0.75);
+            // margin-right: 40px;
+            img {
+                margin-bottom: 15px;
+            }
+        }
+        &__navigation {
+            // margin-right: 119px;
+            ul {
+                li {
+                    a {
+
+                    }
+                }
+            }
+        }
+        &__aboutUs {
+            // margin-right: 118px;
+        }
+        &__subscribe {
+            width: 260px;
+            padding-top: 13px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            text-transform: uppercase;
+            line-height: 15px;
+            color: #1F2041;
+            // margin-left: 87px;
+            .subscription_text_field {
+                margin: 0;
+                input {
+                    width: 260px;
+                }
+                .subscription_text_field__input_svg {
+                    padding-top: 10px;
+                    padding-right: 60px;
+                }
+            }
+            p {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                text-transform: initial;
+                font-size: 14px;
+                line-height: 24px;
+                color: rgba(31, 32, 65, 0.75);
+            }
+        }
+
+    }
+    .big_footer__bottom {
+        flex-basis: 1140px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 26px 140px;
+        border-top: 1px solid #E5E5E5;
+        svg {
+            margin-right: 20px;
+        }
+        &__copyright {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: rgba(31, 32, 65, 0.75);
+                    }
+    }
+}

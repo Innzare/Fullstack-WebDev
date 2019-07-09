@@ -80,11 +80,23 @@
 }
 .block3 {
     margin-left: -135px;
+    @media screen and (max-width: 1714px){
+        margin-left: 140px; 
+    }
+    @media screen and (max-width: 1528px){
+        margin-left: 140px;
+    }
 }
 .block2 {
-    margin-left: 250px;
+    margin-left: 140px;
+    @media screen and (max-width: 1330px){
+        margin-left: 140px;
+    }
 }
 .block4 {
     display: flex;
     flex-wrap: wrap;
+}
+
+.block1 {
 }

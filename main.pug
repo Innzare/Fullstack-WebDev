@@ -50,7 +50,7 @@ html(lang="en")
                 +filter_date_dropdown('filter date dropdown')
 
                 include Form_Elements/subscription_text_field/subscription_text_field
-                +subscription_text_field('subscription text field')
+                +subscription_text_field('subscription text field', 'Email')
 
                 include Form_Elements/expendable_checkbox_list/expendable_checkbox_list
                 +expendable_checkbox_list('expendable_checkbox_list')
@@ -127,6 +127,9 @@ html(lang="en")
 
         include Header&Footer/header/header
         +header()
+
+        include Header&Footer/big_footer/big_footer
+        +big_footer()
 
 
 

@@ -1,4 +1,4 @@
-mixin subscription_text_field(title)
+mixin subscription_text_field(title, place)
     .subscription_text_field
         .subscription_text_field__span
             span= title
@@ -13,4 +13,4 @@ mixin subscription_text_field(title)
                 </linearGradient>
                 </defs>
                 </svg>
-            input(type="text" placeholder="Email")
+            input(type="text" placeholder= place)

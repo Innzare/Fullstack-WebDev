@@ -1,5 +1,6 @@
 .registration {
-    width: 380px;
+    width: 100%;
+    max-width: 380px;
     height: 671px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.12);
@@ -69,5 +70,8 @@
         .button__click_me_two {
             margin: 0;
         }
+    }
+    @media screen and (max-width: 1714px){
+        margin-top: 20px;
     }
 }
