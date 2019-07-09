@@ -46,23 +46,9 @@
             font-size: 14px;
             line-height: 24px;
             color: rgba(31, 32, 65, 0.75);
-            // margin-right: 40px;
             img {
                 margin-bottom: 15px;
             }
-        }
-        &__navigation {
-            // margin-right: 119px;
-            ul {
-                li {
-                    a {
-
-                    }
-                }
-            }
-        }
-        &__aboutUs {
-            // margin-right: 118px;
         }
         &__subscribe {
             width: 260px;
@@ -74,7 +60,6 @@
             text-transform: uppercase;
             line-height: 15px;
             color: #1F2041;
-            // margin-left: 87px;
             .subscription_text_field {
                 margin: 0;
                 input {
@@ -95,7 +80,6 @@
                 color: rgba(31, 32, 65, 0.75);
             }
         }
-
     }
     .big_footer__bottom {
         flex-basis: 1140px;
