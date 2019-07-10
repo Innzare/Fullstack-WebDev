@@ -3324,6 +3324,9 @@ body {
       .footer__wrapper__icons svg {
         margin-right: 20px; }
 
+.landing_page .big_footer {
+  margin-top: 0; }
+
 .landing_page .header_autorize {
   margin-top: 0; }
 
