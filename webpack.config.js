@@ -18,6 +18,10 @@ module.exports = {
             filename: 'index.html', 
             template: './main.pug'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'landing_page.html', 
+            template: './landing_page.pug'
+        }),
         new MiniCssExtractPlugin ({
             filename: '[name].css', 
         }),

@@ -3324,6 +3324,48 @@ body {
       .footer__wrapper__icons svg {
         margin-right: 20px; }
 
+.landing_page .header_autorize {
+  margin-top: 0; }
+
+.landing_page__background {
+  position: relative; }
+  .landing_page__background img {
+    width: 100%; }
+  .landing_page__background .room__search__wrapper {
+    position: absolute;
+    flex-basis: 380px;
+    max-width: 380px;
+    top: 70px;
+    left: 140px;
+    margin: 0; }
+    @media screen and (max-width: 996px) {
+      .landing_page__background .room__search__wrapper {
+        width: 50%;
+        margin: auto;
+        top: 20px;
+        left: 0;
+        right: 0; } }
+  .landing_page__background__text {
+    position: absolute;
+    flex-basis: 277px;
+    max-width: 277px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    bottom: 18px;
+    right: 134px;
+    text-align: right; }
+    @media screen and (max-width: 996px) {
+      .landing_page__background__text {
+        margin: auto;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        text-align: center; } }
+
 /*! nouislider - 13.1.5 - 4/24/2019 */
 /* Functional styling;
  * These styles are required for noUiSlider to function.
