@@ -13,6 +13,13 @@ module.exports = {
         path: path.resolve(__dirname, './dist'),
         publicPath: ''
     },
+    devServer: {
+        stats: 'errors-only',
+        overlay: true,
+        contentBase: './dist',
+        index: 'index.html', // 'ui-kit.html'
+        index: 'landing_page.html'
+    },
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html', 
