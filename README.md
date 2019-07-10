@@ -2,6 +2,8 @@
 
 Fullstack-WebDev UI Kit
 
-https://innzare.github.io/Fullstack-WebDev/dist/index
+Toxin web-site
 
-https://innzare.github.io/Fullstack-WebDev/dist/landing_page
+(UI-KIT page) https://innzare.github.io/Fullstack-WebDev/dist/index
+
+(Landing-page) https://innzare.github.io/Fullstack-WebDev/dist/landing_page
