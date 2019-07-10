@@ -1,6 +1,6 @@
 # Fullstack-WebDev
 
-Fullstack-WebDev UI Kit
+Fullstack-WebDev Project
 
 Toxin web-site
 
