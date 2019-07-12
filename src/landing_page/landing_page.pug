@@ -17,18 +17,18 @@ html(lang="en")
         script(src="../air/air-datepicker/dist/js/datepicker.js")
         
     body
-        include Header&Footer/header_autorize/header_autorize
-        include Form_Elements/buttons/buttons
+        include ../Header&Footer/header_autorize/header_autorize
+        include ../Form_Elements/buttons/buttons
         .landing_page   
             +header_autorize()
             .landing_page__background
                 img(src="../src/images/landing_page.png", alt="")
-                include components/room__search/room__search
-                include Form_Elements/date_dropdown/date_dropdown
-                include Form_Elements/dropdown/dropdown_vis
-                include Form_Elements/dropdown_bedroom/dropdown_bedroom
-                include Form_Elements/subscription_text_field/subscription_text_field
+                include ../components/room__search/room__search
+                include ../Form_Elements/date_dropdown/date_dropdown
+                include ../Form_Elements/dropdown/dropdown_vis
+                include ../Form_Elements/dropdown_bedroom/dropdown_bedroom
+                include ../Form_Elements/subscription_text_field/subscription_text_field
                 +room__search()
                 .landing_page__background__text Лучшие номера для вашей работы, отдыха и просто вдохновения
-            include Header&Footer/big_footer/big_footer
+            include ../Header&Footer/big_footer/big_footer
             +big_footer()

@@ -3096,10 +3096,10 @@ body {
     .header_autorize .header_autorize__content .header_autorize__content__nav .button__click_me_one {
       margin: 0;
       margin-left: 20px;
-      width: 101px;
+      width: 196px;
       height: 38px; }
       .header_autorize .header_autorize__content .header_autorize__content__nav .button__click_me_one input {
-        width: 101px;
+        width: 196px;
         height: 38px; }
     .header_autorize .header_autorize__content .header_autorize__content__nav ul {
       list-style: none;
@@ -3333,7 +3333,8 @@ body {
 .landing_page__background {
   position: relative; }
   .landing_page__background img {
-    width: 100%; }
+    width: 100%;
+    height: 830px; }
   .landing_page__background .room__search__wrapper {
     position: absolute;
     flex-basis: 380px;
