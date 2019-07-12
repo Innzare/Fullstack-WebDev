@@ -850,19 +850,19 @@ text-transform: uppercase;
     border: none; }
 
 @font-face{
-    font-family: 'Montserrat';    
+    font-family: Montserrat;    
     src: url(fonts/Montserrat-Regular73478dfb41dc723ed8e79b9c98ea2ea9.ttf);    
     font-weight: normal;    
     font-style: normal;    
 }
 @font-face{
-    font-family: 'Montserrat';    
+    font-family: Montserrat;    
     src: url(fonts/Montserrat-Regular5bf4b065525b7e2c7d06b40f4a10b1cb.woff);    
     font-weight: normal;    
     font-style: normal;    
 }
 @font-face{
-    font-family: 'Montserrat';    
+    font-family: Montserrat;    
     src: url(data:image/svg+xml;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJiMmZiNTZiYmU2MjBhZTU4NTUyZWQxMmVmNWQ4NWZjZS5zdmciOw==);    
     font-weight: normal;    
     font-style: normal;    
@@ -873,19 +873,19 @@ text-transform: uppercase;
 
 
 @font-face{
-    font-family: 'Montserrat';    
+    font-family: Montserrat;    
     src: url(fonts/Montserrat-Bold48290a72b6283c459c1e69bf5ae0d869.ttf);    
     font-weight: bold;    
     font-style: normal;    
 }
 @font-face{
-    font-family: 'Montserrat';    
+    font-family: Montserrat;    
     src: url(fonts/Montserrat-Bolddaca76cba025f0d0d3b80c75430cb16e.woff);    
     font-weight: bold;    
     font-style: normal;    
 }
 @font-face{
-    font-family: 'Montserrat';    
+    font-family: Montserrat;    
     src: url(data:image/svg+xml;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJkN2ExYzM2NDdiZDNjZTU2Yjg2Njk3ZDNkODVmZWQwMC5zdmciOw==);    
     font-weight: bold;    
     font-style: normal;    

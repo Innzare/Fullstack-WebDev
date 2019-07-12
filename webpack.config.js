@@ -23,11 +23,11 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html', 
-            template: './main.pug'
+            template: './src/main.pug'
         }),
         new HtmlWebpackPlugin({
             filename: 'landing_page.html', 
-            template: './landing_page.pug'
+            template: './src/landing_page.pug'
         }),
         new MiniCssExtractPlugin ({
             filename: '[name].css', 
