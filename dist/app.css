@@ -3105,7 +3105,7 @@ body {
       list-style: none;
       display: flex;
       align-items: center; }
-      @media screen and (max-width: 994px) {
+      @media screen and (max-width: 1072px) {
         .header_autorize .header_autorize__content .header_autorize__content__nav ul {
           display: none; } }
       .header_autorize .header_autorize__content .header_autorize__content__nav ul li {
