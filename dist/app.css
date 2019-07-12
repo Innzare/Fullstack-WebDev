@@ -3335,6 +3335,9 @@ body {
   .landing_page__background img {
     width: 100%;
     height: 830px; }
+    @media screen and (max-width: 783px) {
+      .landing_page__background img {
+        height: 730px; } }
   .landing_page__background .room__search__wrapper {
     position: absolute;
     flex-basis: 380px;

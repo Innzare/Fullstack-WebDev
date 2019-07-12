@@ -10,6 +10,9 @@
         img {
             width: 100%;
             height: 830px;
+            @media screen and (max-width: 783px){
+                height: 730px;
+            }
         }
         .room__search__wrapper {
             position: absolute;
