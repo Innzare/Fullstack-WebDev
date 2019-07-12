@@ -3069,7 +3069,7 @@ body {
     padding: 0 140px;
     align-items: center;
     justify-content: space-between; }
-    @media screen and (max-width: 1214px) {
+    @media screen and (max-width: 1292px) {
       .header_autorize .header_autorize__content {
         padding: 0 30px; } }
     @media screen and (max-width: 1072px) {
