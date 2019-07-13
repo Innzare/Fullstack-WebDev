@@ -3373,6 +3373,84 @@ body {
         right: 0;
         text-align: center; } }
 
+.filter_page .big_footer {
+  border-top: 1px solid rgba(31, 32, 65, 0.25); }
+
+.filter_page .header_autorize {
+  margin-top: 0; }
+
+.filter_page__wrapper {
+  display: flex;
+  flex-basis: 1172px;
+  padding: 0 140px; }
+  @media screen and (max-width: 800px) {
+    .filter_page__wrapper {
+      flex-wrap: wrap; } }
+  .filter_page__wrapper__filterBlock {
+    width: 266px;
+    margin-right: 60px; }
+    .filter_page__wrapper__filterBlock .filter_date_dropdown {
+      margin: 30px 0 0 0; }
+    .filter_page__wrapper__filterBlock .dropdown_vis {
+      margin: 20px 0 0 0;
+      width: 266px; }
+      .filter_page__wrapper__filterBlock .dropdown_vis .dropdown_vis__input {
+        width: 266px; }
+        .filter_page__wrapper__filterBlock .dropdown_vis .dropdown_vis__input input {
+          width: 266px; }
+    .filter_page__wrapper__filterBlock .range_slider {
+      margin: 30px 0 0 0; }
+    .filter_page__wrapper__filterBlock .checkbox_buttons {
+      margin: 30px 0 0 0; }
+    .filter_page__wrapper__filterBlock .rich_checkbox_buttons {
+      margin: 30px 0 0 0; }
+    .filter_page__wrapper__filterBlock .dropdown_bedroom {
+      margin: 30px 0 0 0;
+      width: 266px; }
+      .filter_page__wrapper__filterBlock .dropdown_bedroom .dropdown_bedroom__input {
+        width: 266px; }
+        .filter_page__wrapper__filterBlock .dropdown_bedroom .dropdown_bedroom__input input {
+          width: 266px; }
+    .filter_page__wrapper__filterBlock .expendable_checkbox_list_wrapper {
+      margin: 30px 0 0 0;
+      width: 250px; }
+      .filter_page__wrapper__filterBlock .expendable_checkbox_list_wrapper .expendable_checkbox_list {
+        margin: 0; }
+  .filter_page__wrapper__roomsBlock__text {
+    flex-basis: 513px;
+    height: 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1F2041;
+    margin-top: 30px; }
+  .filter_page__wrapper__roomsBlock__rooms {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    .filter_page__wrapper__roomsBlock__rooms .room_888 {
+      margin: 0;
+      margin-right: 12px; }
+      @media screen and (max-width: 1188px) {
+        .filter_page__wrapper__roomsBlock__rooms .room_888 {
+          margin-top: 20px; } }
+    .filter_page__wrapper__roomsBlock__rooms .room_840 {
+      margin: 0;
+      margin-right: 12px; }
+      @media screen and (max-width: 1188px) {
+        .filter_page__wrapper__roomsBlock__rooms .room_840 {
+          margin-top: 20px; } }
+    .filter_page__wrapper__roomsBlock__rooms__pag {
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 70px; }
+      .filter_page__wrapper__roomsBlock__rooms__pag .pagination {
+        width: 240px;
+        margin: 0 auto; }
+
 /*! nouislider - 13.1.5 - 4/24/2019 */
 /* Functional styling;
  * These styles are required for noUiSlider to function.

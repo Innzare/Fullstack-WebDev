@@ -29,6 +29,10 @@ module.exports = {
             filename: 'landing_page.html', 
             template: './src/landing_page/landing_page.pug'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'filter_page.html', 
+            template: './src/filter_page/filter_page.pug'
+        }),
         new MiniCssExtractPlugin ({
             filename: '[name].css', 
         }),

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+
+        //- Подключение библиотеки jQuery
+        link(rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")
+        script(src="https://code.jquery.com/jquery-1.12.4.js")
+        script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+
+        //- Подключение плагина Air-Datepicker
+        link(href="../air/air-datepicker/dist/css/datepicker.css" rel="stylesheet" type="text/css")
+        script(src="../air/air-datepicker/dist/js/datepicker.js")
+
+    body
+
+        include ../Header&Footer/header_autorize/header_autorize
+        include ../Form_Elements/buttons/buttons
+        include ../Form_Elements/filter_date_dropdown/filter_date_dropdown
+        include ../Form_Elements/dropdown/dropdown_vis
+        include ../Form_Elements/range_slider/range_slider
+        include ../Form_Elements/checkbox_buttons/checkbox_buttons
+        include ../Form_Elements/rich_checkbox_buttons/rich_checkbox_buttons
+        include ../Form_Elements/dropdown_bedroom/dropdown_bedroom
+        include ../Form_Elements/expendable_checkbox_list/expendable_checkbox_list
+        include ../components/888_room/888_room
+        include ../components/840_room/room_840
+        include ../Form_Elements/pagination/pagination
+        include ../Header&Footer/big_footer/big_footer
+        .filter_page   
+            +header_autorize()
+            .filter_page__wrapper
+                .filter_page__wrapper__filterBlock
+                    +filter_date_dropdown('даты пребывания в отеле')
+                    +dropdown_vis('гости')
+                    +range_slider('диапазон цены')
+                    +checkbox_buttons()
+                    +rich_checkbox_buttons('доступность')
+                    +dropdown_bedroom('удобства номера')
+                    +expendable_checkbox_list('дополнительные удобства')
+                .filter_page__wrapper__roomsBlock
+                    .filter_page__wrapper__roomsBlock__text Номера, которые мы для вас подобрали
+                    .filter_page__wrapper__roomsBlock__rooms
+                        +888_room()
+                        +840_room()
+                        +888_room()
+                        +840_room()
+                        +888_room()
+                        +840_room()
+                        +888_room()
+                        +840_room()
+                        +888_room()
+                        +840_room()
+                        +888_room()
+                        +840_room()
+                        .filter_page__wrapper__roomsBlock__rooms__pag
+                            +pagination('')
+            +big_footer()                        
+
+
+
+        script(src='app.js')
