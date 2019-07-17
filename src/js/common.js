@@ -1,36 +1,47 @@
+import './../Form_Elements/doughnut/rotapie/jquery.rotapie'
+const Rotopie = require("./../Form_Elements/doughnut/rotapie/jquery.rotapie");
 
+$('.doughnut__chart').rotapie({
+  slices: [
+      { color: '#FFBA9C', amount: 520, unit: "ГОЛОСОВ"}, // If color not set, slice will be transparant.
+      { color: '#BC9CFF', amount: 260, unit: "ГОЛОСОВ"}, // Font color to render percentage defaults to 'color' but can be overriden by setting 'fontColor'.
+      { color: '#6FCF97', amount: 260, unit: "ГОЛОСОВ"},
+      { color: '#919191', amount: 0, unit: "ГОЛОСОВ"}
+  ],
+});
+  
 // BUTTONS
     var buttonOne = document.querySelector('div.button__click_me_one');
     function buttonClickOne() {
       buttonOne.classList.toggle('button__click_me_one__active');
     }
-buttonOne.onclick = buttonClickOne;
+    buttonOne.onclick = buttonClickOne;
 
     var buttonTwo = document.querySelector('div.button__click_me_two');
     function buttonClickTwo() {
       buttonTwo.classList.toggle('button__click_me_two__active');
     }
-buttonTwo.onclick = buttonClickTwo;
+    buttonTwo.onclick = buttonClickTwo;
 
     var buttonThree = document.querySelector('div.button__click_me_three');
     function buttonClickThree() {
       buttonThree.classList.toggle('button__click_me_three__active');
     }
-buttonThree.onclick = buttonClickThree;
+    buttonThree.onclick = buttonClickThree;
 
 
 // DROPDOWN
     var elem = document.querySelector('div.dropdown_vis__input_svg');
-    var elems = document.querySelector('#test1');
-    elem.onclick = elems.style.display = 'none';
-    function func() {
+    var elems = document.querySelector('div.dropdown_content');
+    // elem.onclick = elems.style.display = 'none';
+     function func() {
         if (elems.style.display == 'none') {
           elems.style.display = 'inline-block';
         } else {
           elems.style.display = 'none'
         }
       }
-elem.onclick = func;
+window.onload = elem.onclick = func;
 
     var elem1 = document.querySelector('div.dropdown_bedroom__input_svg');
     var elems1 = document.querySelector('div.dropdown_bedroom_content');
@@ -42,7 +53,7 @@ elem.onclick = func;
           elems1.style.display = 'none'
         }
       }
-elem1.onclick = func1;
+      window.onload = elem1.onclick = func1;
 
 // CHECKBOX
     var elem2 = document.querySelector('div.expendable_checkbox_list__svg');
@@ -57,7 +68,7 @@ elem1.onclick = func1;
           elems2.style.display = 'none';
         }
       }
-elem2.onclick = func2;
+      window.onload = elem2.onclick = func2;
 
 
 // LIKE BUTTON
@@ -77,7 +88,9 @@ elem2.onclick = func2;
       like.addEventListener('click', like1);
     }
 
-
+function time () {
+   return 
+}
     
 // RANGE-SLIDER
     var rangeSlider = document.getElementById('slider-range');

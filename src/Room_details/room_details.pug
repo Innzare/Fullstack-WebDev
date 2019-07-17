@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+
+        //- Подключение библиотеки jQuery
+        link(rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")
+        script(src="https://code.jquery.com/jquery-1.12.4.js")
+        script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+
+        //- Подключение плагина Air-Datepicker
+        link(href="../air/air-datepicker/dist/css/datepicker.css" rel="stylesheet" type="text/css")
+        script(src="../air/air-datepicker/dist/js/datepicker.js")
+
+    body
+        include ../Form_Elements/buttons/buttons
+        include ../Header&Footer/header_autorize/header_autorize
+        include ../Form_Elements/doughnut/doughnut
+        include ../components/roomNumber__888/roomNumber__888
+        include ../Form_Elements/dropdown/dropdown_vis
+        include ../Form_Elements/filter_date_dropdown/filter_date_dropdown
+        include ../Form_Elements/date_dropdown/date_dropdown
+        include ../Header&Footer/big_footer/big_footer
+        include ../Form_Elements/comfort/comfort
+        include ../Form_Elements/feedback_block/feedback_block
+        include ../Form_Elements/billet_list/billet_list
+        .room_details
+            +header_autorize()
+            .room_details__photos
+                    img(src="../src/images/room_details1.png", alt="").room_details__photos-1
+                    img(src="../src/images/room_details2.png", alt="").room_details__photos-rt
+                    img(src="../src/images/room_details3.png", alt="").room_details__photos-rb
+            .room_details__content   
+                .room_details__content__container 
+                    .room_details__content__container__block    
+                        .room_details__content__container__block__info       
+                            +comfort('Сведения о номере')
+                            +doughnut('Впечатления от номера')
+                        .room_details__content__container__block__feedback
+                            span Отзывы посетителей номера
+                            span.comm 2 отзыва
+                            +feedback_block('../src/icons/feedback.png', 'Мурад Сарафанов', '5 дней назад', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.','12', 'checkbox114') 
+                            +feedback_block('../src/images/feedback2.png', 'Патрисия Стеклышкова', 'Неделю назад', 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент','2', 'checkbox115')       
+                        .room_details__content__container__block__scope
+                            .room_details__content__container__block__scope__rules
+                                +billet_list('Правила')
+                            .room_details__content__container__block__scope__cancel
+                                span Отмена
+                                span.text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+                    .room_details__content__container__room
+                        +roomNumber__888()
+            +big_footer()     

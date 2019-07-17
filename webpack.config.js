@@ -9,7 +9,7 @@ module.exports = {
         app: './src/index.js'
     },
     output: {
-        filename: '[name].js',
+        filename: 'app.js',
         path: path.resolve(__dirname, './dist'),
         publicPath: ''
     },
@@ -32,6 +32,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'filter_page.html', 
             template: './src/filter_page/filter_page.pug'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'room_details.html', 
+            template: './src/room_details/room_details.pug'
         }),
         new MiniCssExtractPlugin ({
             filename: '[name].css', 

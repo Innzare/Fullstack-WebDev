@@ -9,3 +9,5 @@ Toxin web-site
 <p><a href='https://innzare.github.io/Fullstack-WebDev/dist/landing_page'>Landing-page</a></p>
 
 <p><a href='https://innzare.github.io/Fullstack-WebDev/dist/filter_page'>Filter-page</a></p>
+
+<p><a href='https://innzare.github.io/Fullstack-WebDev/dist/room_details'>Room details-page</a></p>

@@ -1,4 +1,4 @@
-mixin like_button(title, checkboxNum)
+mixin like_button(like, title, checkboxNum)
     .like_button
         b= title 
         .like_button__container
@@ -10,5 +10,5 @@ mixin like_button(title, checkboxNum)
                             
 
                         .like_button_checklist__overlay__heart_num
-                            span#like_span 0
+                            span#like_span= like
                     .like_button_checkbox_value

@@ -1,0 +1,65 @@
+.doughnut {
+    margin-top: 40px;
+    &__diagram {
+        display: flex;
+    } 
+    &__list {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 166px;
+        .doughnut__list__one, .doughnut__list__two, .doughnut__list__three, .doughnut__list__four {
+            display: flex;
+            align-items: center;
+        }
+        &__one-1 {
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
+            background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+            border-radius: 22px;
+            align-items: center;
+        }
+        &__two-2 {
+            width: 10px;
+            height: 10px;
+            background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+            margin-right: 5px;
+            border-radius: 22px;
+            align-items: center;
+        }
+        &__three-3 {
+            width: 10px;
+            height: 10px;
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            margin-right: 5px;
+            border-radius: 22px;
+            align-items: center;
+        }
+        &__four-4 {
+            width: 10px;
+            height: 10px;
+            background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+            margin-right: 5px;
+            border-radius: 22px;
+            align-items: center;
+        }
+    }
+    > span {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 24px;
+        color: #1F2041;
+        display: block;
+        margin-bottom: 20px;
+    }
+}

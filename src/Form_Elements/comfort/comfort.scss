@@ -2,6 +2,16 @@
     margin-left: 140px;
     width: 290px;
     margin-top: 285px;
+    > span {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 24px;
+        color: #1F2041;
+        margin-bottom: 20px;
+        display: block;
+    }
     .comfort_smile {
         display: flex;
         border-bottom: 1px solid rgba(31, 32, 65, 0.1);
@@ -30,6 +40,30 @@
             margin-right: 14px;
         }
         .comfort_house__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: Montserrat;
+            color: rgba(31, 32, 65, 0.75);
+            font-size: 14px;
+            b {
+                font-weight: bold;
+                margin-bottom: 3px;
+            }
+            span {
+                margin-top: 3px;
+            }
+        }
+    }
+    .comfort_comfort {
+        display: flex;
+        border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .comfort_comfort__svg {
+            margin-right: 14px;
+        }
+        .comfort_comfort__text {
             display: flex;
             flex-direction: column;
             justify-content: space-between;

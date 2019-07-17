@@ -2309,6 +2309,15 @@ text-transform: uppercase;
   margin-left: 140px;
   width: 290px;
   margin-top: 285px; }
+  .comfort > span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    color: #1F2041;
+    margin-bottom: 20px;
+    display: block; }
   .comfort .comfort_smile {
     display: flex;
     border-bottom: 1px solid rgba(31, 32, 65, 0.1);
@@ -2342,6 +2351,25 @@ text-transform: uppercase;
         font-weight: bold;
         margin-bottom: 3px; }
       .comfort .comfort_house .comfort_house__text span {
+        margin-top: 3px; }
+  .comfort .comfort_comfort {
+    display: flex;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .comfort .comfort_comfort .comfort_comfort__svg {
+      margin-right: 14px; }
+    .comfort .comfort_comfort .comfort_comfort__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: Montserrat;
+      color: rgba(31, 32, 65, 0.75);
+      font-size: 14px; }
+      .comfort .comfort_comfort .comfort_comfort__text b {
+        font-weight: bold;
+        margin-bottom: 3px; }
+      .comfort .comfort_comfort .comfort_comfort__text span {
         margin-top: 3px; }
 
 .checkbox_buttons {
@@ -3047,7 +3075,9 @@ text-transform: uppercase;
     display: flex;
     margin-top: 10px; }
     .feedback_block .feedback_block_like .like_button {
-      margin: 0; }
+      margin: 0;
+      width: 40px;
+      height: 20px; }
       .feedback_block .feedback_block_like .like_button .like_button__container {
         margin-top: 0; }
     .feedback_block .feedback_block_like .feedback_block_like_comment {
@@ -3450,6 +3480,184 @@ body {
       .filter_page__wrapper__roomsBlock__rooms__pag .pagination {
         width: 240px;
         margin: 0 auto; }
+
+.doughnut {
+  margin-top: 40px; }
+  .doughnut__diagram {
+    display: flex; }
+  .doughnut__list {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 166px; }
+    .doughnut__list .doughnut__list__one, .doughnut__list .doughnut__list__two, .doughnut__list .doughnut__list__three, .doughnut__list .doughnut__list__four {
+      display: flex;
+      align-items: center; }
+    .doughnut__list__one-1 {
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+      background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+      border-radius: 22px;
+      align-items: center; }
+    .doughnut__list__two-2 {
+      width: 10px;
+      height: 10px;
+      background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+      margin-right: 5px;
+      border-radius: 22px;
+      align-items: center; }
+    .doughnut__list__three-3 {
+      width: 10px;
+      height: 10px;
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      margin-right: 5px;
+      border-radius: 22px;
+      align-items: center; }
+    .doughnut__list__four-4 {
+      width: 10px;
+      height: 10px;
+      background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+      margin-right: 5px;
+      border-radius: 22px;
+      align-items: center; }
+  .doughnut > span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    color: #1F2041;
+    display: block;
+    margin-bottom: 20px; }
+
+.room_details {
+  width: 100%; }
+  .room_details .comfort {
+    margin: 0;
+    margin-right: 80px; }
+  .room_details .doughnut {
+    margin: 0;
+    width: 311px;
+    height: 120px; }
+  .room_details .roomNumber__888 {
+    margin: 0; }
+  .room_details .header_autorize {
+    margin: 0; }
+  .room_details .feedback_block {
+    margin: 0;
+    margin-bottom: 25px; }
+  .room_details .big_footer {
+    margin-top: 70px;
+    border-top: 1px solid #E5E5E5; }
+  .room_details__photos {
+    flex-basis: 100%;
+    height: 487px;
+    display: grid;
+    grid-template-columns: 68% 32%;
+    grid-template-rows: auto auto;
+    justify-items: stretch; }
+    .room_details__photos-1 {
+      object-fit: cover;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      height: 487px; }
+    .room_details__photos-rt {
+      object-fit: cover;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      height: 244px; }
+    .room_details__photos-rb {
+      object-fit: cover;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      height: 243px; }
+  .room_details__content {
+    padding: 70px 140px 0 140px; }
+    .room_details__content__container {
+      display: flex;
+      justify-content: space-between; }
+      .room_details__content__container__block {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 70px;
+        flex-basis: 1200px;
+        flex-grow: 1; }
+        .room_details__content__container__block__info {
+          display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 30px; }
+        .room_details__content__container__block__feedback > span {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 19px;
+          line-height: 24px;
+          color: #1F2041;
+          display: inline-block;
+          margin-bottom: 20px; }
+        .room_details__content__container__block__feedback > span.comm {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 14px;
+          text-align: right;
+          float: right;
+          display: inline-block;
+          color: rgba(31, 32, 65, 0.5); }
+        .room_details__content__container__block__scope {
+          margin-top: 5px;
+          display: flex; }
+          .room_details__content__container__block__scope__rules {
+            width: 292px;
+            margin-right: 70px; }
+            .room_details__content__container__block__scope__rules .billet_list {
+              width: 292px;
+              margin: 0; }
+              .room_details__content__container__block__scope__rules .billet_list > span {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 19px;
+                line-height: 24px;
+                color: #1F2041;
+                text-transform: initial;
+                margin: 0;
+                margin-left: 20px; }
+          .room_details__content__container__block__scope__cancel {
+            width: 341px; }
+            .room_details__content__container__block__scope__cancel > span {
+              font-family: Montserrat;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 19px;
+              line-height: 24px;
+              color: #1F2041;
+              display: block;
+              margin-bottom: 20px; }
+            .room_details__content__container__block__scope__cancel span.text {
+              font-family: Montserrat;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 24px;
+              color: rgba(31, 32, 65, 0.75);
+              display: block; }
 
 /*! nouislider - 13.1.5 - 4/24/2019 */
 /* Functional styling;

@@ -1,6 +1,5 @@
+import './js/common.js';
 import './../node_modules/jquery/dist/jquery';
-import 'popper.js';
-import './js/common';
 import './../air/air-datepicker/dist/js/datepicker.js';
 import './../air/air-datepicker/dist/css/datepicker.css';
 import './css/main.css';

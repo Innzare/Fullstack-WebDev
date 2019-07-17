@@ -1,14 +1,14 @@
 include ../like_button/like_button
 
-mixin feedback_block()
+mixin feedback_block(img, name, days, comm, like, num)
     .feedback_block
         .feedback_block_name
             .feedback_block_name_img
-                img(src="../src/icons/feedback.png", alt="")
+                img(src= img, alt="")
             .feedback_block_name_name 
-                b Мурад Сарафанов 
+                b= name
                     br 
-                span 5 дней назад
+                span= days
         .feedback_block_like
-            +like_button('', 'checkbox114').feedback_block_like_mixin
-            .feedback_block_like_comment Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
+            +like_button(like, '', num).feedback_block_like_mixin
+            .feedback_block_like_comment= comm

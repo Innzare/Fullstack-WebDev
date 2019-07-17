@@ -15,6 +15,10 @@ html(lang="en")
         link(href="../air/air-datepicker/dist/css/datepicker.css" rel="stylesheet" type="text/css")
         script(src="../air/air-datepicker/dist/js/datepicker.js")
 
+        <script src="//code.jquery.com/jquery-3.2.0.min.js"></script>
+    
+
+
         //- Подключение шрифтов
         //- link(href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand&display=swap" rel="stylesheet")
         //- link(rel="stylesheet", href="app.css")
@@ -71,7 +75,7 @@ html(lang="en")
                 +toggle('toggle', 'checkbox13')
 
                 include Form_Elements/like_button/like_button
-                +like_button('like button', 'checkbox14')
+                +like_button('12', 'like button', 'checkbox14')
 
                 include Form_Elements/rate_button/rate_button
                 +rate_button('rate buttons')
@@ -80,10 +84,10 @@ html(lang="en")
                 +rich_checkbox_buttons()
                 
                 include Form_Elements/billet_list/billet_list
-                +billet_list()
+                +billet_list('bulliet list')
 
                 include Form_Elements/feedback_block/feedback_block
-                +feedback_block()
+                +feedback_block('../src/icons/feedback.png', 'Мурад Сарафанов', '5 дней назад', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.','12', 'checkbox114')
 
             .block3
                 include Form_Elements/buttons/buttons
@@ -98,6 +102,9 @@ html(lang="en")
 
                 include Form_Elements/range_slider/range_slider
                 +range_slider('диапазон цены')
+
+                include Form_Elements/doughnut/doughnut
+                +doughnut('')
 
             .block4 
                 include components/room__search/room__search
