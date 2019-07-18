@@ -37,6 +37,14 @@ module.exports = {
             filename: 'room_details.html', 
             template: './src/room_details/room_details.pug'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'registration.html', 
+            template: './src/registration_page/registration_page.pug'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'sign_in.html', 
+            template: './src/sign_in_page/sign_in_page.pug'
+        }),
         new MiniCssExtractPlugin ({
             filename: '[name].css', 
         }),

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+
+        //- Подключение библиотеки jQuery
+        link(rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")
+        script(src="https://code.jquery.com/jquery-1.12.4.js")
+        script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+
+        //- Подключение плагина Air-Datepicker
+        link(href="../air/air-datepicker/dist/css/datepicker.css" rel="stylesheet" type="text/css")
+        script(src="../air/air-datepicker/dist/js/datepicker.js")
+        
+    body
+        include ../Form_Elements/buttons/buttons
+        include ../Header&Footer/header_autorize/header_autorize
+        include ../components/registration/registration
+        include ../components/enter/enter
+        include ../Form_Elements/toggle/toggle
+        include ../Form_Elements/radio_buttons/radio_buttons
+        include ../Form_Elements/text_field/text_field
+        include ../Form_Elements/masked_text_field/masked_text_field
+        include ../Header&Footer/big_footer/big_footer
+
+
+        
+        +header_autorize()
+        .sign_in_page
+            .sign_in_page__background
+                img(src="../src/images/registration.png", alt="")
+                +enter()
+        +big_footer()

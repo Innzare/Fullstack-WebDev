@@ -1,0 +1,21 @@
+.header_autorize {
+    margin: 0;
+}
+.registration_page {
+    &__background {
+        height: 769px;
+        position: relative;
+        img {
+            width: 100%;
+            height: 769px;
+        }
+        .registration {
+            margin: 0;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+}

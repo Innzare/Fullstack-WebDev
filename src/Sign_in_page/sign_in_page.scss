@@ -1,0 +1,22 @@
+.header_autorize {
+    margin: 0;
+}
+.sign_in_page {
+    &__background {
+        height: 769px;
+        position: relative;
+        img {
+            width: 100%;
+            height: 769px;
+        }
+        .enter {
+            margin: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+}
